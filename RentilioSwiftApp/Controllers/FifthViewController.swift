@@ -9,22 +9,45 @@
 import UIKit
 
 class FifthViewController: UIViewController {
+    
+    let sections = ["Konto", "Flota"]
+    let menu = [
+        ["Profil", "Zaloguj się", "Zarejestruj się", "Wyloguj się"],
+        ["Moje samochody", "Dodaj samochód"]
+    ]
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+}
+
+extension FifthViewController: UITableViewDelegate {
+    
+}
+
+extension FifthViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        self.sections[section]
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        sections.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        menu[section].count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "basicMenuCell", for: indexPath)
+        cell.textLabel?.text = menu[indexPath.section][indexPath.row]
+        return cell
+    }
+    
+    
 }
