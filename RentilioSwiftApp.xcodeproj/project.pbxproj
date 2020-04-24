@@ -14,6 +14,9 @@
 		DB6E715024531BB20041BD1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6E714E24531BB20041BD1F /* Main.storyboard */; };
 		DB6E715224531BB40041BD1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6E715124531BB40041BD1F /* Assets.xcassets */; };
 		DB6E715524531BB40041BD1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6E715324531BB40041BD1F /* LaunchScreen.storyboard */; };
+		DB6E716024531F430041BD1F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E715F24531F430041BD1F /* ThirdViewController.swift */; };
+		DB6E716224531F510041BD1F /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E716124531F510041BD1F /* ForthViewController.swift */; };
+		DB6E716424531F610041BD1F /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E716324531F610041BD1F /* FifthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		DB6E715124531BB40041BD1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB6E715424531BB40041BD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB6E715624531BB40041BD1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6E715F24531F430041BD1F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		DB6E716124531F510041BD1F /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
+		DB6E716324531F610041BD1F /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,43 @@
 		DB6E714524531BB20041BD1F /* RentilioSwiftApp */ = {
 			isa = PBXGroup;
 			children = (
+				DB6E715D24531C2A0041BD1F /* Models */,
+				DB6E715C24531C1B0041BD1F /* Views */,
+				DB6E715E24531C4A0041BD1F /* Controllers */,
 				DB6E714624531BB20041BD1F /* AppDelegate.swift */,
 				DB6E714824531BB20041BD1F /* SceneDelegate.swift */,
-				DB6E714A24531BB20041BD1F /* FirstViewController.swift */,
-				DB6E714C24531BB20041BD1F /* SecondViewController.swift */,
-				DB6E714E24531BB20041BD1F /* Main.storyboard */,
 				DB6E715124531BB40041BD1F /* Assets.xcassets */,
 				DB6E715324531BB40041BD1F /* LaunchScreen.storyboard */,
 				DB6E715624531BB40041BD1F /* Info.plist */,
 			);
 			path = RentilioSwiftApp;
+			sourceTree = "<group>";
+		};
+		DB6E715C24531C1B0041BD1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB6E714E24531BB20041BD1F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB6E715D24531C2A0041BD1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB6E715E24531C4A0041BD1F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB6E714A24531BB20041BD1F /* FirstViewController.swift */,
+				DB6E714C24531BB20041BD1F /* SecondViewController.swift */,
+				DB6E715F24531F430041BD1F /* ThirdViewController.swift */,
+				DB6E716124531F510041BD1F /* ForthViewController.swift */,
+				DB6E716324531F610041BD1F /* FifthViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6E716224531F510041BD1F /* ForthViewController.swift in Sources */,
 				DB6E714D24531BB20041BD1F /* SecondViewController.swift in Sources */,
 				DB6E714B24531BB20041BD1F /* FirstViewController.swift in Sources */,
+				DB6E716024531F430041BD1F /* ThirdViewController.swift in Sources */,
 				DB6E714724531BB20041BD1F /* AppDelegate.swift in Sources */,
 				DB6E714924531BB20041BD1F /* SceneDelegate.swift in Sources */,
+				DB6E716424531F610041BD1F /* FifthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
