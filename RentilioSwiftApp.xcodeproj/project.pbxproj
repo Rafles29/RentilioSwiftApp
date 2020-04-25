@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB11C24324548F8E00BF3391 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB11C24124548F8E00BF3391 /* MessageTableViewCell.swift */; };
+		DB11C24424548F8E00BF3391 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB11C24224548F8E00BF3391 /* MessageTableViewCell.xib */; };
+		DB11C24724549AD300BF3391 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB11C24524549AD300BF3391 /* NotificationTableViewCell.swift */; };
+		DB11C24824549AD300BF3391 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB11C24624549AD300BF3391 /* NotificationTableViewCell.xib */; };
 		DB6E714724531BB20041BD1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E714624531BB20041BD1F /* AppDelegate.swift */; };
 		DB6E714924531BB20041BD1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E714824531BB20041BD1F /* SceneDelegate.swift */; };
 		DB6E714B24531BB20041BD1F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E714A24531BB20041BD1F /* FirstViewController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB11C24124548F8E00BF3391 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		DB11C24224548F8E00BF3391 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		DB11C24524549AD300BF3391 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		DB11C24624549AD300BF3391 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		DB6E714324531BB20041BD1F /* RentilioSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentilioSwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6E714624531BB20041BD1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB6E714824531BB20041BD1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				DB6E714E24531BB20041BD1F /* Main.storyboard */,
+				DB11C24124548F8E00BF3391 /* MessageTableViewCell.swift */,
+				DB11C24224548F8E00BF3391 /* MessageTableViewCell.xib */,
+				DB11C24524549AD300BF3391 /* NotificationTableViewCell.swift */,
+				DB11C24624549AD300BF3391 /* NotificationTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,7 +173,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB11C24824549AD300BF3391 /* NotificationTableViewCell.xib in Resources */,
 				DB6E715524531BB40041BD1F /* LaunchScreen.storyboard in Resources */,
+				DB11C24424548F8E00BF3391 /* MessageTableViewCell.xib in Resources */,
 				DB6E715224531BB40041BD1F /* Assets.xcassets in Resources */,
 				DB6E715024531BB20041BD1F /* Main.storyboard in Resources */,
 			);
@@ -174,11 +188,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB11C24724549AD300BF3391 /* NotificationTableViewCell.swift in Sources */,
 				DB6E716224531F510041BD1F /* ForthViewController.swift in Sources */,
 				DB6E714D24531BB20041BD1F /* SecondViewController.swift in Sources */,
 				DB6E714B24531BB20041BD1F /* FirstViewController.swift in Sources */,
 				DB6E716024531F430041BD1F /* ThirdViewController.swift in Sources */,
 				DB6E714724531BB20041BD1F /* AppDelegate.swift in Sources */,
+				DB11C24324548F8E00BF3391 /* MessageTableViewCell.swift in Sources */,
 				DB6E714924531BB20041BD1F /* SceneDelegate.swift in Sources */,
 				DB6E716424531F610041BD1F /* FifthViewController.swift in Sources */,
 			);
