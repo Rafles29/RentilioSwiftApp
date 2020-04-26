@@ -21,6 +21,8 @@
 		DB6E716024531F430041BD1F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E715F24531F430041BD1F /* ThirdViewController.swift */; };
 		DB6E716224531F510041BD1F /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E716124531F510041BD1F /* ForthViewController.swift */; };
 		DB6E716424531F610041BD1F /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E716324531F610041BD1F /* FifthViewController.swift */; };
+		DBAF092A2455964000E34871 /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF09282455964000E34871 /* ReservationTableViewCell.swift */; };
+		DBAF092B2455964000E34871 /* ReservationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBAF09292455964000E34871 /* ReservationTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		DB6E715F24531F430041BD1F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		DB6E716124531F510041BD1F /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		DB6E716324531F610041BD1F /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		DBAF09282455964000E34871 /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
+		DBAF09292455964000E34871 /* ReservationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReservationTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				DB11C24224548F8E00BF3391 /* MessageTableViewCell.xib */,
 				DB11C24524549AD300BF3391 /* NotificationTableViewCell.swift */,
 				DB11C24624549AD300BF3391 /* NotificationTableViewCell.xib */,
+				DBAF09282455964000E34871 /* ReservationTableViewCell.swift */,
+				DBAF09292455964000E34871 /* ReservationTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBAF092B2455964000E34871 /* ReservationTableViewCell.xib in Resources */,
 				DB11C24824549AD300BF3391 /* NotificationTableViewCell.xib in Resources */,
 				DB6E715524531BB40041BD1F /* LaunchScreen.storyboard in Resources */,
 				DB11C24424548F8E00BF3391 /* MessageTableViewCell.xib in Resources */,
@@ -196,6 +203,7 @@
 				DB6E714724531BB20041BD1F /* AppDelegate.swift in Sources */,
 				DB11C24324548F8E00BF3391 /* MessageTableViewCell.swift in Sources */,
 				DB6E714924531BB20041BD1F /* SceneDelegate.swift in Sources */,
+				DBAF092A2455964000E34871 /* ReservationTableViewCell.swift in Sources */,
 				DB6E716424531F610041BD1F /* FifthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

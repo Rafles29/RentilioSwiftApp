@@ -48,24 +48,31 @@ extension ThirdViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if inboxSegment.selectedSegmentIndex == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as! MessageTableViewCell
-            cell.profileImage.image = #imageLiteral(resourceName: "first")
-            cell.time.text = "21:37"
-            cell.name.text = "Rafał Woźniak"
-            cell.content.text = "Witam, piszę z zapytaniem o najnwosze lamborghini gallardo"
-            return cell
+        
+        if inboxSegment.selectedSegmentIndex == 0 {
+            return prepareNotificationCell(tableView, indexPath)
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationCell", for: indexPath) as! NotificationTableViewCell
-            cell.mainImage.image = #imageLiteral(resourceName: "second")
-            cell.time.text = "21:37"
-            cell.subject.text = "Nowa rezerwacja"
-            cell.content.text = "Laura Roberts chce wypożyczyć Bugatti Divo"
-            return cell
+            return prepareMessageCell(tableView, indexPath)
         }
     }
     
+    fileprivate func prepareMessageCell(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as! MessageTableViewCell
+        cell.profileImage.image = #imageLiteral(resourceName: "first")
+        cell.time.text = "21:37"
+        cell.name.text = "Rafał Woźniak"
+        cell.content.text = "Witam, piszę z zapytaniem o najnwosze lamborghini gallardo"
+        return cell
+    }
     
+    fileprivate func prepareNotificationCell(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationCell", for: indexPath) as! NotificationTableViewCell
+        cell.mainImage.image = #imageLiteral(resourceName: "second")
+        cell.time.text = "21:37"
+        cell.subject.text = "Nowa rezerwacja"
+        cell.content.text = "Laura Roberts chce wypożyczyć Bugatti Divo"
+        return cell
+    }
 }
 
 extension ThirdViewController: UITableViewDelegate {
