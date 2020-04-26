@@ -36,6 +36,18 @@ class ThirdViewController: UIViewController {
             self.inboxTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController!.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController!.setNavigationBarHidden(false, animated: false)
+    }
 }
 
 extension ThirdViewController: UITableViewDataSource {
@@ -76,5 +88,11 @@ extension ThirdViewController: UITableViewDataSource {
 }
 
 extension ThirdViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if inboxSegment.selectedSegmentIndex == 1 {
+            self.performSegue(withIdentifier: "InboxToMessenger", sender: self)
+        }
+    }
     
 }

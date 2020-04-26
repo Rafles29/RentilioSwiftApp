@@ -40,6 +40,10 @@ class ForthViewController: UIViewController {
 
 extension ForthViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "ToTripDetails", sender: self)
+    }
+    
 }
 
 extension ForthViewController: UITableViewDataSource {
