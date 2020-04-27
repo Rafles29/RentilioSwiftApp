@@ -12,8 +12,8 @@ class FifthViewController: UIViewController {
     
     let sections = ["Konto", "Flota"]
     let menu = [
-        ["Profil", "Zaloguj się", "Zarejestruj się", "Wyloguj się"],
-        ["Moje samochody", "Dodaj samochód"]
+        [Link(name: "Profil", identifier: "MenuToProfile"), Link(name: "Zarejestruj się", identifier: "MenuToRegister"), Link(name: "Zaloguj Się", identifier: "MenuToLogin"), Link(name: "Wyloguj się", identifier: "")],
+        [Link(name: "Moje samochody", identifier: ""), Link(name: "Dodaj samochód", identifier: "")]
     ]
 
     @IBOutlet weak var tableView: UITableView!
@@ -26,7 +26,9 @@ class FifthViewController: UIViewController {
 }
 
 extension FifthViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: menu[indexPath.section][indexPath.row].identifier, sender: self)
+    }
 }
 
 extension FifthViewController: UITableViewDataSource {
@@ -45,9 +47,14 @@ extension FifthViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "basicMenuCell", for: indexPath)
-        cell.textLabel?.text = menu[indexPath.section][indexPath.row]
+        cell.textLabel?.text = menu[indexPath.section][indexPath.row].name
         return cell
     }
     
     
+}
+
+struct Link {
+    var name: String
+    var identifier: String
 }
