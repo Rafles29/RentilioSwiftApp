@@ -29,6 +29,8 @@
 		DB6E716424531F610041BD1F /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E716324531F610041BD1F /* FifthViewController.swift */; };
 		DBAF092A2455964000E34871 /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF09282455964000E34871 /* ReservationTableViewCell.swift */; };
 		DBAF092B2455964000E34871 /* ReservationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBAF09292455964000E34871 /* ReservationTableViewCell.xib */; };
+		DBE5F5232456F0E000611DC3 /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F5222456F0E000611DC3 /* CarDetailsViewController.swift */; };
+		DBE5F5252456F1B500611DC3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F5242456F1B500611DC3 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		DB6E716324531F610041BD1F /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		DBAF09282455964000E34871 /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
 		DBAF09292455964000E34871 /* ReservationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReservationTableViewCell.xib; sourceTree = "<group>"; };
+		DBE5F5222456F0E000611DC3 /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
+		DBE5F5242456F1B500611DC3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 				DB6E716324531F610041BD1F /* FifthViewController.swift */,
 				DB6565972456154200CE5EEA /* MessengerViewController.swift */,
 				DB65659D2456369F00CE5EEA /* TripViewController.swift */,
+				DBE5F5222456F0E000611DC3 /* CarDetailsViewController.swift */,
+				DBE5F5242456F1B500611DC3 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -221,11 +227,13 @@
 				DB6E714D24531BB20041BD1F /* SecondViewController.swift in Sources */,
 				DB65659B2456192100CE5EEA /* MessageCell.swift in Sources */,
 				DB6E714B24531BB20041BD1F /* FirstViewController.swift in Sources */,
+				DBE5F5252456F1B500611DC3 /* ProfileViewController.swift in Sources */,
 				DB6E716024531F430041BD1F /* ThirdViewController.swift in Sources */,
 				DB6E714724531BB20041BD1F /* AppDelegate.swift in Sources */,
 				DB11C24324548F8E00BF3391 /* MessageTableViewCell.swift in Sources */,
 				DB65659E2456369F00CE5EEA /* TripViewController.swift in Sources */,
 				DB6E714924531BB20041BD1F /* SceneDelegate.swift in Sources */,
+				DBE5F5232456F0E000611DC3 /* CarDetailsViewController.swift in Sources */,
 				DBAF092A2455964000E34871 /* ReservationTableViewCell.swift in Sources */,
 				DB6E716424531F610041BD1F /* FifthViewController.swift in Sources */,
 				DB6D74042455A83F005E28D8 /* CarCollectionViewCell.swift in Sources */,
