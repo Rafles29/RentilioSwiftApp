@@ -1,20 +1,19 @@
 //
-//  ProfileViewController.swift
+//  MyCarsViewController.swift
 //  RentilioSwiftApp
 //
-//  Created by Rafal Wozniak on 27/04/2020.
+//  Created by Rafal Wozniak on 28/04/2020.
 //  Copyright © 2020 Rafal Wozniak. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class MyCarsViewController: UIViewController {
 
-    @IBOutlet weak var scrollVew: UIScrollView!
     @IBOutlet weak var carCollection: UICollectionView!
     
     var cars = ["car1", "car2"]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,20 +24,20 @@ class ProfileViewController: UIViewController {
 
 }
 
-extension ProfileViewController: UICollectionViewDelegate {
+extension MyCarsViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //self.performSegue(withIdentifier: "SearchToCarDetails", sender: self)
+        self.performSegue(withIdentifier: "SearchToCarDetails", sender: self)
     }
     
 }
 
-extension ProfileViewController: UICollectionViewDataSource {
+
+extension MyCarsViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cars.count
+        cars.count
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CarCell", for: indexPath) as! CarCollectionViewCell

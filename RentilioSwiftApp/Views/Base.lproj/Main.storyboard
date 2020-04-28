@@ -335,9 +335,6 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                     </view>
                     <navigationItem key="navigationItem" id="3jB-3h-5rW"/>
                     <size key="freeformSize" width="375" height="1300"/>
-                    <connections>
-                        <segue destination="25a-Ps-LAd" kind="show" identifier="CarDetailsToProfile" id="Hac-QA-P1D"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zig-Kr-yug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -493,23 +490,23 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                                 <rect key="frame" x="0.0" y="88" width="375" height="729"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="963-qo-Rtb">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="772"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="772.66666666666663"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="divo" translatesAutoresizingMaskIntoConstraints="NO" id="O4q-q7-zeY">
-                                                <rect key="frame" x="268" y="150" width="213" height="120"/>
+                                                <rect key="frame" x="268" y="150.66666666666666" width="213" height="119.99999999999997"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="213" id="bqA-2i-fU0"/>
                                                     <constraint firstAttribute="height" constant="120" id="yiE-i1-XIh"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="odbiór:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAH-cu-QBF">
-                                                <rect key="frame" x="32" y="150" width="54" height="20.333333333333343"/>
+                                                <rect key="frame" x="32" y="150.66666666666666" width="54" height="20.333333333333343"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xuF-6W-SFg">
-                                                <rect key="frame" x="102" y="150" width="128" height="48.666666666666657"/>
+                                                <rect key="frame" x="102" y="150.66666666666666" width="128" height="48.666666666666657"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04.20, 12;00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6s-IO-dag">
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="20.333333333333332"/>
@@ -518,7 +515,7 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galeria Mokotów" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5b1-8P-qf4">
-                                                        <rect key="frame" x="0.0" y="28.333333333333314" width="128" height="20.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="28.333333333333343" width="128" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -526,13 +523,13 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="odbiór:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mI7-eR-HOi">
-                                                <rect key="frame" x="32" y="228.33333333333331" width="54" height="20.333333333333343"/>
+                                                <rect key="frame" x="32" y="229" width="54" height="20.333333333333343"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lkj-D2-0O3">
-                                                <rect key="frame" x="102" y="228.66666666666669" width="128" height="48.666666666666686"/>
+                                                <rect key="frame" x="102" y="229.33333333333331" width="128" height="48.666666666666686"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04.20, 12;00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09V-cc-chO">
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="20.333333333333332"/>
@@ -541,7 +538,7 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galeria Mokotów" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXB-J4-X1X">
-                                                        <rect key="frame" x="0.0" y="28.333333333333314" width="128" height="20.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="28.333333333333371" width="128" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -549,7 +546,7 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mJm-Rb-Kzp">
-                                                <rect key="frame" x="99.333333333333329" y="352.33333333333331" width="176.33333333333337" height="61"/>
+                                                <rect key="frame" x="99.333333333333329" y="353" width="176.33333333333337" height="61"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y0l-bE-MbS">
                                                         <rect key="frame" x="0.0" y="0.0" width="176.33333333333334" height="20.333333333333332"/>
@@ -569,7 +566,7 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hk2-l0-eb0">
-                                                        <rect key="frame" x="0.0" y="20.333333333333371" width="176.33333333333334" height="20.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="20.333333333333314" width="176.33333333333334" height="20.333333333333329"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ubezpieczenie&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txg-EG-LXf">
                                                                 <rect key="frame" x="0.0" y="0.0" width="117.66666666666667" height="20.333333333333332"/>
@@ -605,14 +602,14 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                                                 </subviews>
                                             </stackView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TWJ-Zm-YNh">
-                                                <rect key="frame" x="0.0" y="465.00000000000006" width="130" height="127.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="465.66666666666669" width="130" height="127.33333333333331"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="0b8-OE-mxG"/>
                                                     <constraint firstAttribute="height" constant="130" id="4Ci-PS-cAo"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dLx-Ht-nf6">
-                                                <rect key="frame" x="146" y="493.00000000000006" width="199.33333333333337" height="70.666666666666686"/>
+                                                <rect key="frame" x="146" y="493.66666666666669" width="199.33333333333337" height="70.666666666666686"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tlE-QE-kUo">
                                                         <rect key="frame" x="0.0" y="0.0" width="199.33333333333334" height="20.333333333333332"/>
@@ -644,7 +641,7 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhV-dO-Cr8">
-                                                <rect key="frame" x="116" y="663.66666666666663" width="143" height="30"/>
+                                                <rect key="frame" x="116" y="664.33333333333337" width="143" height="30"/>
                                                 <state key="normal" title="Wyświetl stronę auta"/>
                                             </button>
                                         </subviews>
@@ -669,7 +666,7 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                                         </constraints>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skrzynka1" translatesAutoresizingMaskIntoConstraints="NO" id="2av-lM-fpv">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="116.33333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bugatti Divo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMx-5U-DdJ">
                                         <rect key="frame" x="58.666666666666657" y="50" width="258" height="60"/>
@@ -714,6 +711,44 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
             </objects>
             <point key="canvasLocation" x="2597.5999999999999" y="1475.615763546798"/>
         </scene>
+        <!--Moje samochody-->
+        <scene sceneID="Z8M-gI-gGi">
+            <objects>
+                <viewController id="wdQ-HI-HbG" customClass="MyCarsViewController" customModule="RentilioSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KyI-ZS-xEm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gNx-Fo-5Ks">
+                                <rect key="frame" x="0.0" y="120" width="375" height="609"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="leg-Aj-uAc">
+                                    <size key="itemSize" width="375" height="300"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gNx-Fo-5Ks" firstAttribute="bottom" secondItem="ydQ-uX-OPp" secondAttribute="bottom" id="DaC-AJ-P6K"/>
+                            <constraint firstItem="gNx-Fo-5Ks" firstAttribute="trailing" secondItem="ydQ-uX-OPp" secondAttribute="trailing" id="OST-DY-9Qo"/>
+                            <constraint firstItem="gNx-Fo-5Ks" firstAttribute="leading" secondItem="ydQ-uX-OPp" secondAttribute="leading" id="dhR-K4-Xf6"/>
+                            <constraint firstItem="gNx-Fo-5Ks" firstAttribute="top" secondItem="ydQ-uX-OPp" secondAttribute="top" constant="32" id="et8-xY-c5H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ydQ-uX-OPp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Moje samochody" id="Wwt-Zt-D9b"/>
+                    <connections>
+                        <outlet property="carCollection" destination="gNx-Fo-5Ks" id="dit-LE-sYw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KkM-Zp-4W0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="3082.7586206896553"/>
+        </scene>
         <!--Menu-->
         <scene sceneID="g51-li-SRZ">
             <objects>
@@ -757,16 +792,17 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                     <navigationItem key="navigationItem" title="Menu" id="NxB-kN-GBg"/>
                     <connections>
                         <outlet property="tableView" destination="eZx-yB-Mlz" id="hGQ-7F-mlJ"/>
-                        <segue destination="25a-Ps-LAd" kind="show" identifier="MenuToProfile" id="Zt4-co-lRq"/>
                         <segue destination="0bo-Ak-Tfn" kind="show" identifier="MenuToRegister" id="2Sw-Db-kdp"/>
                         <segue destination="dU1-t7-cJH" kind="show" identifier="MenuToLogin" id="wsU-lv-wRx"/>
+                        <segue destination="eyx-3b-mZy" kind="show" identifier="MenuToProfile" id="HLD-1h-7aY"/>
+                        <segue destination="wdQ-HI-HbG" kind="show" identifier="MenuToMyCars" id="2Lz-Nh-RYq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZaM-Z4-zj4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1657.9710144927537" y="2168.9732142857142"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Rejestracja-->
         <scene sceneID="DcA-d3-YWM">
             <objects>
                 <viewController id="0bo-Ak-Tfn" customClass="RegisterViewController" customModule="RentilioSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -828,27 +864,11 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="L3j-qS-KBI"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cfX-KF-oHs"/>
+                    <navigationItem key="navigationItem" title="Rejestracja" id="cfX-KF-oHs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKU-cL-Rzo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1657" y="3082"/>
-        </scene>
-        <!--Profile View Controller-->
-        <scene sceneID="nEA-ek-Ekn">
-            <objects>
-                <viewController id="25a-Ps-LAd" customClass="ProfileViewController" customModule="RentilioSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3bC-HD-aX7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="qg0-UJ-Ch0"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ZdC-GY-hvV"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4RD-9R-jcO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3302" y="2169"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -947,7 +967,7 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
             </objects>
             <point key="canvasLocation" x="748" y="0.0"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Logowanie-->
         <scene sceneID="jxU-fo-QjC">
             <objects>
                 <viewController id="dU1-t7-cJH" customClass="LoginViewController" customModule="RentilioSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -1004,16 +1024,139 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Isw-TK-Vcb"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lcB-9t-vpU"/>
+                    <navigationItem key="navigationItem" title="Logowanie" id="lcB-9t-vpU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N60-th-Uba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2526" y="3081"/>
         </scene>
+        <!--Profil-->
+        <scene sceneID="X0k-lN-D6U">
+            <objects>
+                <viewController id="eyx-3b-mZy" customClass="ProfileViewController" customModule="RentilioSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h4T-AJ-m0R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ady-uR-sbv">
+                                <rect key="frame" x="0.0" y="88" width="375" height="1029"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2oc-He-MhC">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1062"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="divo" translatesAutoresizingMaskIntoConstraints="NO" id="K62-dZ-apw">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Id8-bF-rum">
+                                                <rect key="frame" x="95" y="76.999999999999986" width="185" height="181.66666666666669"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Id8-bF-rum" secondAttribute="height" multiplier="1:1" id="iAr-8f-c7z"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anna Goodwin" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6f-aq-hyW">
+                                                <rect key="frame" x="75" y="276" width="225" height="40.666666666666686"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="34"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O MNIE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INb-90-MpI">
+                                                <rect key="frame" x="16" y="349" width="61" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lN9-gN-CWM">
+                                                <rect key="frame" x="16" y="378" width="343" height="203"/>
+                                                <string key="text">Jestem pasjonatką aut już od najmłodszych lat. Swoją pasją chcę dzielić się ze światem, dlatego założyłam konto na rentilio.
+
+Moje auta są w doskonałym stanie, całorocznie garażowane. Przed każdym wynajmem czyszczone, by radość z prowadzenia była jak największa!
+
+Udanych podróży!</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moje samochody" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWn-1b-b5r">
+                                                <rect key="frame" x="16" y="624" width="194" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="C0H-8S-vf5">
+                                                <rect key="frame" x="0.0" y="662" width="375" height="400"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="A97-PJ-noO"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Njr-Hn-1gQ">
+                                                    <size key="itemSize" width="375" height="300"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Id8-bF-rum" firstAttribute="leading" secondItem="2oc-He-MhC" secondAttribute="leading" constant="95" id="0LX-Dt-hBW"/>
+                                            <constraint firstAttribute="trailing" secondItem="Id8-bF-rum" secondAttribute="trailing" constant="95" id="0vM-14-eWp"/>
+                                            <constraint firstItem="X6f-aq-hyW" firstAttribute="centerX" secondItem="2oc-He-MhC" secondAttribute="centerX" id="1Cq-mH-fE4"/>
+                                            <constraint firstAttribute="trailing" secondItem="lN9-gN-CWM" secondAttribute="trailing" constant="16" id="1fC-h3-Nks"/>
+                                            <constraint firstItem="K62-dZ-apw" firstAttribute="top" secondItem="2oc-He-MhC" secondAttribute="top" id="Bjh-h2-CU4"/>
+                                            <constraint firstItem="INb-90-MpI" firstAttribute="leading" secondItem="2oc-He-MhC" secondAttribute="leading" constant="16" id="FTt-Gz-G8A"/>
+                                            <constraint firstItem="lN9-gN-CWM" firstAttribute="top" secondItem="INb-90-MpI" secondAttribute="bottom" constant="8" id="IFN-yA-fgL"/>
+                                            <constraint firstAttribute="bottom" secondItem="C0H-8S-vf5" secondAttribute="bottom" id="Jhr-TK-fR6"/>
+                                            <constraint firstAttribute="trailing" secondItem="Id8-bF-rum" secondAttribute="trailing" constant="95" id="QMK-V1-dsQ"/>
+                                            <constraint firstItem="Id8-bF-rum" firstAttribute="top" secondItem="2oc-He-MhC" secondAttribute="top" constant="75" id="QwM-t9-IES"/>
+                                            <constraint firstItem="INb-90-MpI" firstAttribute="top" secondItem="X6f-aq-hyW" secondAttribute="bottom" constant="32.333333333333314" id="URP-jY-sXL"/>
+                                            <constraint firstItem="X6f-aq-hyW" firstAttribute="top" secondItem="Id8-bF-rum" secondAttribute="bottom" constant="16" id="Zfg-B8-HzB"/>
+                                            <constraint firstItem="C0H-8S-vf5" firstAttribute="leading" secondItem="2oc-He-MhC" secondAttribute="leading" id="gS5-m1-pKy"/>
+                                            <constraint firstItem="SWn-1b-b5r" firstAttribute="top" secondItem="lN9-gN-CWM" secondAttribute="bottom" constant="43" id="hee-6b-dXI"/>
+                                            <constraint firstItem="C0H-8S-vf5" firstAttribute="top" secondItem="SWn-1b-b5r" secondAttribute="bottom" constant="8" id="iTa-eC-dT5"/>
+                                            <constraint firstItem="K62-dZ-apw" firstAttribute="leading" secondItem="2oc-He-MhC" secondAttribute="leading" id="lt8-TL-6ud"/>
+                                            <constraint firstItem="SWn-1b-b5r" firstAttribute="leading" secondItem="2oc-He-MhC" secondAttribute="leading" constant="16" id="nyV-mu-qn6"/>
+                                            <constraint firstItem="Id8-bF-rum" firstAttribute="leading" secondItem="2oc-He-MhC" secondAttribute="leading" constant="95" id="qfu-e1-aej"/>
+                                            <constraint firstAttribute="trailing" secondItem="C0H-8S-vf5" secondAttribute="trailing" id="uWC-hp-Qbl"/>
+                                            <constraint firstItem="lN9-gN-CWM" firstAttribute="leading" secondItem="2oc-He-MhC" secondAttribute="leading" constant="16" id="vuY-qY-okN"/>
+                                            <constraint firstAttribute="trailing" secondItem="K62-dZ-apw" secondAttribute="trailing" id="vws-wS-zTI"/>
+                                            <constraint firstItem="Id8-bF-rum" firstAttribute="top" secondItem="2oc-He-MhC" secondAttribute="top" constant="75" id="znt-ne-Zw5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2oc-He-MhC" firstAttribute="height" secondItem="ady-uR-sbv" secondAttribute="height" priority="250" id="AGK-Na-voj"/>
+                                    <constraint firstItem="2oc-He-MhC" firstAttribute="width" secondItem="ady-uR-sbv" secondAttribute="width" id="EVi-gg-Ohz"/>
+                                    <constraint firstItem="2oc-He-MhC" firstAttribute="leading" secondItem="ady-uR-sbv" secondAttribute="leading" id="J0m-Ij-XcD"/>
+                                    <constraint firstAttribute="trailing" secondItem="2oc-He-MhC" secondAttribute="trailing" id="SZs-hQ-sIk"/>
+                                    <constraint firstItem="2oc-He-MhC" firstAttribute="top" secondItem="ady-uR-sbv" secondAttribute="top" id="fYE-MJ-Woq"/>
+                                    <constraint firstAttribute="bottom" secondItem="2oc-He-MhC" secondAttribute="bottom" id="kvb-66-2zQ"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="OXm-27-AeJ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ejn-et-yef"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Vnb-Sd-QGI" firstAttribute="bottom" secondItem="ady-uR-sbv" secondAttribute="bottom" id="0TQ-c5-vIJ"/>
+                            <constraint firstItem="ady-uR-sbv" firstAttribute="leading" secondItem="Vnb-Sd-QGI" secondAttribute="leading" id="XDc-lv-8b2"/>
+                            <constraint firstItem="ady-uR-sbv" firstAttribute="top" secondItem="Vnb-Sd-QGI" secondAttribute="top" id="fFn-jo-Jq1"/>
+                            <constraint firstItem="Vnb-Sd-QGI" firstAttribute="trailing" secondItem="ady-uR-sbv" secondAttribute="trailing" id="vD6-Bq-7ez"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vnb-Sd-QGI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profil" id="Ocs-dX-VV5"/>
+                    <size key="freeformSize" width="375" height="1200"/>
+                    <connections>
+                        <outlet property="carCollection" destination="C0H-8S-vf5" id="1df-TB-PdU"/>
+                        <outlet property="scrollVew" destination="ady-uR-sbv" id="LTj-sy-enx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DtU-EW-vTM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3444" y="3082.7586206896553"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Zt4-co-lRq"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="car" catalog="system" width="128" height="93"/>
         <image name="divo" width="366" height="215"/>
@@ -1022,6 +1165,7 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="map" catalog="system" width="128" height="113"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="second" width="30" height="30"/>
         <image name="skrzynka1" width="328" height="117"/>
         <image name="tray.full" catalog="system" width="128" height="88"/>

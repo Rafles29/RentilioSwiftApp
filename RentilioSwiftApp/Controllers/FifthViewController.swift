@@ -13,7 +13,7 @@ class FifthViewController: UIViewController {
     let sections = ["Konto", "Flota"]
     let menu = [
         [Link(name: "Profil", identifier: "MenuToProfile"), Link(name: "Zarejestruj się", identifier: "MenuToRegister"), Link(name: "Zaloguj Się", identifier: "MenuToLogin"), Link(name: "Wyloguj się", identifier: "")],
-        [Link(name: "Moje samochody", identifier: ""), Link(name: "Dodaj samochód", identifier: "")]
+        [Link(name: "Moje samochody", identifier: "MenuToMyCars"), Link(name: "Dodaj samochód", identifier: "")]
     ]
 
     @IBOutlet weak var tableView: UITableView!

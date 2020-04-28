@@ -27,6 +27,7 @@
 		DB6E716024531F430041BD1F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E715F24531F430041BD1F /* ThirdViewController.swift */; };
 		DB6E716224531F510041BD1F /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E716124531F510041BD1F /* ForthViewController.swift */; };
 		DB6E716424531F610041BD1F /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E716324531F610041BD1F /* FifthViewController.swift */; };
+		DB8F1CBE24588E01007600B4 /* MyCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F1CBD24588E01007600B4 /* MyCarsViewController.swift */; };
 		DBAF092A2455964000E34871 /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF09282455964000E34871 /* ReservationTableViewCell.swift */; };
 		DBAF092B2455964000E34871 /* ReservationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBAF09292455964000E34871 /* ReservationTableViewCell.xib */; };
 		DBE5F5232456F0E000611DC3 /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F5222456F0E000611DC3 /* CarDetailsViewController.swift */; };
@@ -58,6 +59,7 @@
 		DB6E715F24531F430041BD1F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		DB6E716124531F510041BD1F /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		DB6E716324531F610041BD1F /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		DB8F1CBD24588E01007600B4 /* MyCarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarsViewController.swift; sourceTree = "<group>"; };
 		DBAF09282455964000E34871 /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
 		DBAF09292455964000E34871 /* ReservationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReservationTableViewCell.xib; sourceTree = "<group>"; };
 		DBE5F5222456F0E000611DC3 /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				DBE5F5242456F1B500611DC3 /* ProfileViewController.swift */,
 				DBF672582457312A0007859D /* LoginViewController.swift */,
 				DBF6725A245731330007859D /* RegisterViewController.swift */,
+				DB8F1CBD24588E01007600B4 /* MyCarsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				DB6E716224531F510041BD1F /* ForthViewController.swift in Sources */,
 				DB6E714D24531BB20041BD1F /* SecondViewController.swift in Sources */,
 				DB65659B2456192100CE5EEA /* MessageCell.swift in Sources */,
+				DB8F1CBE24588E01007600B4 /* MyCarsViewController.swift in Sources */,
 				DB6E714B24531BB20041BD1F /* FirstViewController.swift in Sources */,
 				DBE5F5252456F1B500611DC3 /* ProfileViewController.swift in Sources */,
 				DB6E716024531F430041BD1F /* ThirdViewController.swift in Sources */,
