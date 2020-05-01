@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,27 @@
 		DB11C24424548F8E00BF3391 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB11C24224548F8E00BF3391 /* MessageTableViewCell.xib */; };
 		DB11C24724549AD300BF3391 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB11C24524549AD300BF3391 /* NotificationTableViewCell.swift */; };
 		DB11C24824549AD300BF3391 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB11C24624549AD300BF3391 /* NotificationTableViewCell.xib */; };
+		DB1B8520245AD3EF002F3120 /* RegisterDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B851F245AD3EF002F3120 /* RegisterDTO.swift */; };
+		DB1B8522245AD4AB002F3120 /* LoginDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B8521245AD4AB002F3120 /* LoginDTO.swift */; };
+		DB1B8524245AD52D002F3120 /* TokenDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B8523245AD52D002F3120 /* TokenDTO.swift */; };
+		DB1B852D245AD7B6002F3120 /* CarDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B852C245AD7B6002F3120 /* CarDTO.swift */; };
+		DB1B852F245B0162002F3120 /* ImageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B852E245B0162002F3120 /* ImageDTO.swift */; };
+		DB1B8531245B01B0002F3120 /* CarImageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B8530245B01B0002F3120 /* CarImageDTO.swift */; };
+		DB1B8533245B01F5002F3120 /* EquipmentDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B8532245B01F5002F3120 /* EquipmentDTO.swift */; };
+		DB1B8535245B0214002F3120 /* CarFeatureDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B8534245B0214002F3120 /* CarFeatureDTO.swift */; };
+		DB1B8537245B022A002F3120 /* PriceDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B8536245B022A002F3120 /* PriceDTO.swift */; };
+		DB1B8539245B0255002F3120 /* AdressDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B8538245B0255002F3120 /* AdressDTO.swift */; };
+		DB1B853B245B0276002F3120 /* PerformanceDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B853A245B0276002F3120 /* PerformanceDTO.swift */; };
+		DB1B853D245B02A8002F3120 /* RentDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B853C245B02A8002F3120 /* RentDTO.swift */; };
+		DB1B853F245B0323002F3120 /* NotificationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B853E245B0323002F3120 /* NotificationDTO.swift */; };
+		DB1B8541245B0D1A002F3120 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B8540245B0D1A002F3120 /* UserDTO.swift */; };
+		DB1B8543245B0E5F002F3120 /* ProfileImageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B8542245B0E5F002F3120 /* ProfileImageDTO.swift */; };
+		DB1B8545245B0EB2002F3120 /* ConverstaionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B8544245B0EB2002F3120 /* ConverstaionDTO.swift */; };
+		DB1B8547245B0FA2002F3120 /* MessageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B8546245B0FA2002F3120 /* MessageDTO.swift */; };
+		DB1B854A245B2AB3002F3120 /* AuthenticationHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B8549245B2AB3002F3120 /* AuthenticationHttpService.swift */; };
+		DB1B854C245C63F3002F3120 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B854B245C63F3002F3120 /* Constants.swift */; };
+		DB1B854F245C6548002F3120 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DB1B854E245C6548002F3120 /* Alamofire */; };
+		DB1B8552245C7563002F3120 /* DictionaryConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B8551245C7563002F3120 /* DictionaryConvertor.swift */; };
 		DB6565982456154200CE5EEA /* MessengerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6565972456154200CE5EEA /* MessengerViewController.swift */; };
 		DB65659B2456192100CE5EEA /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6565992456192100CE5EEA /* MessageCell.swift */; };
 		DB65659C2456192100CE5EEA /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB65659A2456192100CE5EEA /* MessageCell.xib */; };
@@ -28,6 +49,9 @@
 		DB6E716224531F510041BD1F /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E716124531F510041BD1F /* ForthViewController.swift */; };
 		DB6E716424531F610041BD1F /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E716324531F610041BD1F /* FifthViewController.swift */; };
 		DB8F1CBE24588E01007600B4 /* MyCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F1CBD24588E01007600B4 /* MyCarsViewController.swift */; };
+		DB8F1CC0245894A6007600B4 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F1CBF245894A6007600B4 /* AddCarViewController.swift */; };
+		DBA1AE26245C9EB0009F0E6C /* CarHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1AE25245C9EB0009F0E6C /* CarHttpService.swift */; };
+		DBA1AE29245CA796009F0E6C /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1AE28245CA796009F0E6C /* AccountManager.swift */; };
 		DBAF092A2455964000E34871 /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF09282455964000E34871 /* ReservationTableViewCell.swift */; };
 		DBAF092B2455964000E34871 /* ReservationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBAF09292455964000E34871 /* ReservationTableViewCell.xib */; };
 		DBE5F5232456F0E000611DC3 /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F5222456F0E000611DC3 /* CarDetailsViewController.swift */; };
@@ -41,6 +65,26 @@
 		DB11C24224548F8E00BF3391 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
 		DB11C24524549AD300BF3391 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		DB11C24624549AD300BF3391 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		DB1B851F245AD3EF002F3120 /* RegisterDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDTO.swift; sourceTree = "<group>"; };
+		DB1B8521245AD4AB002F3120 /* LoginDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
+		DB1B8523245AD52D002F3120 /* TokenDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDTO.swift; sourceTree = "<group>"; };
+		DB1B852C245AD7B6002F3120 /* CarDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDTO.swift; sourceTree = "<group>"; };
+		DB1B852E245B0162002F3120 /* ImageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDTO.swift; sourceTree = "<group>"; };
+		DB1B8530245B01B0002F3120 /* CarImageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImageDTO.swift; sourceTree = "<group>"; };
+		DB1B8532245B01F5002F3120 /* EquipmentDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDTO.swift; sourceTree = "<group>"; };
+		DB1B8534245B0214002F3120 /* CarFeatureDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFeatureDTO.swift; sourceTree = "<group>"; };
+		DB1B8536245B022A002F3120 /* PriceDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDTO.swift; sourceTree = "<group>"; };
+		DB1B8538245B0255002F3120 /* AdressDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressDTO.swift; sourceTree = "<group>"; };
+		DB1B853A245B0276002F3120 /* PerformanceDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceDTO.swift; sourceTree = "<group>"; };
+		DB1B853C245B02A8002F3120 /* RentDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentDTO.swift; sourceTree = "<group>"; };
+		DB1B853E245B0323002F3120 /* NotificationDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDTO.swift; sourceTree = "<group>"; };
+		DB1B8540245B0D1A002F3120 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		DB1B8542245B0E5F002F3120 /* ProfileImageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageDTO.swift; sourceTree = "<group>"; };
+		DB1B8544245B0EB2002F3120 /* ConverstaionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverstaionDTO.swift; sourceTree = "<group>"; };
+		DB1B8546245B0FA2002F3120 /* MessageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDTO.swift; sourceTree = "<group>"; };
+		DB1B8549245B2AB3002F3120 /* AuthenticationHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHttpService.swift; sourceTree = "<group>"; };
+		DB1B854B245C63F3002F3120 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DB1B8551245C7563002F3120 /* DictionaryConvertor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryConvertor.swift; sourceTree = "<group>"; };
 		DB6565972456154200CE5EEA /* MessengerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerViewController.swift; sourceTree = "<group>"; };
 		DB6565992456192100CE5EEA /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		DB65659A2456192100CE5EEA /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
@@ -60,6 +104,9 @@
 		DB6E716124531F510041BD1F /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		DB6E716324531F610041BD1F /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		DB8F1CBD24588E01007600B4 /* MyCarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarsViewController.swift; sourceTree = "<group>"; };
+		DB8F1CBF245894A6007600B4 /* AddCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
+		DBA1AE25245C9EB0009F0E6C /* CarHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHttpService.swift; sourceTree = "<group>"; };
+		DBA1AE28245CA796009F0E6C /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		DBAF09282455964000E34871 /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
 		DBAF09292455964000E34871 /* ReservationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReservationTableViewCell.xib; sourceTree = "<group>"; };
 		DBE5F5222456F0E000611DC3 /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
@@ -73,12 +120,110 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1B854F245C6548002F3120 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB1B851E245AD37A002F3120 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B852B245AD718002F3120 /* Image */,
+				DB1B852A245AD6D5002F3120 /* Rent */,
+				DB1B8529245AD6CA002F3120 /* Notification */,
+				DB1B8528245AD68A002F3120 /* Conversation */,
+				DB1B8527245AD67E002F3120 /* User */,
+				DB1B8526245AD674002F3120 /* Car */,
+				DB1B8525245AD636002F3120 /* Account */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		DB1B8525245AD636002F3120 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B851F245AD3EF002F3120 /* RegisterDTO.swift */,
+				DB1B8521245AD4AB002F3120 /* LoginDTO.swift */,
+				DB1B8523245AD52D002F3120 /* TokenDTO.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		DB1B8526245AD674002F3120 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B852C245AD7B6002F3120 /* CarDTO.swift */,
+				DB1B8532245B01F5002F3120 /* EquipmentDTO.swift */,
+				DB1B8534245B0214002F3120 /* CarFeatureDTO.swift */,
+				DB1B8536245B022A002F3120 /* PriceDTO.swift */,
+				DB1B8538245B0255002F3120 /* AdressDTO.swift */,
+				DB1B853A245B0276002F3120 /* PerformanceDTO.swift */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		DB1B8527245AD67E002F3120 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B8540245B0D1A002F3120 /* UserDTO.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		DB1B8528245AD68A002F3120 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B8544245B0EB2002F3120 /* ConverstaionDTO.swift */,
+				DB1B8546245B0FA2002F3120 /* MessageDTO.swift */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		DB1B8529245AD6CA002F3120 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B853E245B0323002F3120 /* NotificationDTO.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		DB1B852A245AD6D5002F3120 /* Rent */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B853C245B02A8002F3120 /* RentDTO.swift */,
+			);
+			path = Rent;
+			sourceTree = "<group>";
+		};
+		DB1B852B245AD718002F3120 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B852E245B0162002F3120 /* ImageDTO.swift */,
+				DB1B8530245B01B0002F3120 /* CarImageDTO.swift */,
+				DB1B8542245B0E5F002F3120 /* ProfileImageDTO.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		DB1B8548245B29DA002F3120 /* HttpServices */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B8549245B2AB3002F3120 /* AuthenticationHttpService.swift */,
+				DBA1AE25245C9EB0009F0E6C /* CarHttpService.swift */,
+			);
+			path = HttpServices;
+			sourceTree = "<group>";
+		};
+		DB1B8550245C7548002F3120 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B8551245C7563002F3120 /* DictionaryConvertor.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DB6E713A24531BB20041BD1F = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +251,7 @@
 				DB6E715124531BB40041BD1F /* Assets.xcassets */,
 				DB6E715324531BB40041BD1F /* LaunchScreen.storyboard */,
 				DB6E715624531BB40041BD1F /* Info.plist */,
+				DB1B854B245C63F3002F3120 /* Constants.swift */,
 			);
 			path = RentilioSwiftApp;
 			sourceTree = "<group>";
@@ -131,6 +277,10 @@
 		DB6E715D24531C2A0041BD1F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DBA1AE27245CA781009F0E6C /* Managers */,
+				DB1B8550245C7548002F3120 /* Helpers */,
+				DB1B8548245B29DA002F3120 /* HttpServices */,
+				DB1B851E245AD37A002F3120 /* DTOs */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,8 +300,17 @@
 				DBF672582457312A0007859D /* LoginViewController.swift */,
 				DBF6725A245731330007859D /* RegisterViewController.swift */,
 				DB8F1CBD24588E01007600B4 /* MyCarsViewController.swift */,
+				DB8F1CBF245894A6007600B4 /* AddCarViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DBA1AE27245CA781009F0E6C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DBA1AE28245CA796009F0E6C /* AccountManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +329,9 @@
 			dependencies = (
 			);
 			name = RentilioSwiftApp;
+			packageProductDependencies = (
+				DB1B854E245C6548002F3120 /* Alamofire */,
+			);
 			productName = RentilioSwiftApp;
 			productReference = DB6E714324531BB20041BD1F /* RentilioSwiftApp.app */;
 			productType = "com.apple.product-type.application";
@@ -198,6 +360,9 @@
 				Base,
 			);
 			mainGroup = DB6E713A24531BB20041BD1F;
+			packageReferences = (
+				DB1B854D245C6548002F3120 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DB6E714424531BB20041BD1F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -230,24 +395,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA1AE26245C9EB0009F0E6C /* CarHttpService.swift in Sources */,
+				DB1B852F245B0162002F3120 /* ImageDTO.swift in Sources */,
 				DB6565982456154200CE5EEA /* MessengerViewController.swift in Sources */,
+				DB1B8545245B0EB2002F3120 /* ConverstaionDTO.swift in Sources */,
 				DB11C24724549AD300BF3391 /* NotificationTableViewCell.swift in Sources */,
 				DB6E716224531F510041BD1F /* ForthViewController.swift in Sources */,
+				DB1B8541245B0D1A002F3120 /* UserDTO.swift in Sources */,
+				DB1B853B245B0276002F3120 /* PerformanceDTO.swift in Sources */,
 				DB6E714D24531BB20041BD1F /* SecondViewController.swift in Sources */,
 				DB65659B2456192100CE5EEA /* MessageCell.swift in Sources */,
 				DB8F1CBE24588E01007600B4 /* MyCarsViewController.swift in Sources */,
+				DB1B853D245B02A8002F3120 /* RentDTO.swift in Sources */,
+				DB1B8533245B01F5002F3120 /* EquipmentDTO.swift in Sources */,
 				DB6E714B24531BB20041BD1F /* FirstViewController.swift in Sources */,
+				DB1B8547245B0FA2002F3120 /* MessageDTO.swift in Sources */,
+				DB1B853F245B0323002F3120 /* NotificationDTO.swift in Sources */,
+				DB8F1CC0245894A6007600B4 /* AddCarViewController.swift in Sources */,
 				DBE5F5252456F1B500611DC3 /* ProfileViewController.swift in Sources */,
+				DB1B8535245B0214002F3120 /* CarFeatureDTO.swift in Sources */,
 				DB6E716024531F430041BD1F /* ThirdViewController.swift in Sources */,
+				DB1B8524245AD52D002F3120 /* TokenDTO.swift in Sources */,
+				DB1B8552245C7563002F3120 /* DictionaryConvertor.swift in Sources */,
+				DB1B854C245C63F3002F3120 /* Constants.swift in Sources */,
+				DB1B8537245B022A002F3120 /* PriceDTO.swift in Sources */,
 				DB6E714724531BB20041BD1F /* AppDelegate.swift in Sources */,
+				DB1B852D245AD7B6002F3120 /* CarDTO.swift in Sources */,
+				DB1B8539245B0255002F3120 /* AdressDTO.swift in Sources */,
+				DB1B8520245AD3EF002F3120 /* RegisterDTO.swift in Sources */,
 				DBF6725B245731330007859D /* RegisterViewController.swift in Sources */,
+				DBA1AE29245CA796009F0E6C /* AccountManager.swift in Sources */,
 				DB11C24324548F8E00BF3391 /* MessageTableViewCell.swift in Sources */,
+				DB1B854A245B2AB3002F3120 /* AuthenticationHttpService.swift in Sources */,
 				DB65659E2456369F00CE5EEA /* TripViewController.swift in Sources */,
 				DB6E714924531BB20041BD1F /* SceneDelegate.swift in Sources */,
 				DBE5F5232456F0E000611DC3 /* CarDetailsViewController.swift in Sources */,
+				DB1B8522245AD4AB002F3120 /* LoginDTO.swift in Sources */,
 				DBF672592457312A0007859D /* LoginViewController.swift in Sources */,
 				DBAF092A2455964000E34871 /* ReservationTableViewCell.swift in Sources */,
 				DB6E716424531F610041BD1F /* FifthViewController.swift in Sources */,
+				DB1B8543245B0E5F002F3120 /* ProfileImageDTO.swift in Sources */,
+				DB1B8531245B01B0002F3120 /* CarImageDTO.swift in Sources */,
 				DB6D74042455A83F005E28D8 /* CarCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +634,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB1B854D245C6548002F3120 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB1B854E245C6548002F3120 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB1B854D245C6548002F3120 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB6E713B24531BB20041BD1F /* Project object */;
 }

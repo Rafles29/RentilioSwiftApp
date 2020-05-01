@@ -7,13 +7,26 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginTextField: UITextField!
+    
+    let accountManager = AccountManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        accountManager.delegate = self
+    }
+    
+    @IBAction func loginButtonPressed(_ sender: Any) {
+        let loginData = LoginDTO(userName: loginTextField.text!, password: passwordTextField.text!)
+        
+        accountManager.login(with: loginData)
+        
     }
     
 
@@ -27,4 +40,22 @@ class LoginViewController: UIViewController {
     }
     */
 
+}
+
+extension LoginViewController: AccountManagerDelegate {
+    func userLoggedIn() {
+        print("It works!")
+    }
+    
+    func userRegistered() {
+        return
+    }
+    
+    func tokenRefreshError() {
+        return
+    }
+    
+    func error(_ error: AFError) {
+        print(error)
+    }
 }
