@@ -13,7 +13,8 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var carCollection: UICollectionView!
     
-    var cars = ["car1", "car2"]
+    var cars:[CarDTO] = []
+    let carManager = CarManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,23 @@ class SecondViewController: UIViewController {
         carCollection.register(UINib(nibName: "CarCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CarCell")
         carCollection.delegate = self
         carCollection.dataSource = self
+        carManager.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        carManager.getCars()
     }
 
+}
+
+extension SecondViewController: CarManagerDelegate {
+    func carsFetched(_ cars: [CarDTO]) {
+        print(cars)
+        self.cars = cars
+        DispatchQueue.main.async {
+            self.carCollection.reloadData()
+        }
+    }
 }
 
 extension SecondViewController: UICollectionViewDelegate {
@@ -42,6 +58,7 @@ extension SecondViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CarCell", for: indexPath) as! CarCollectionViewCell
+        cell.carName.text = "\(cars[indexPath.row].manufactor) \(cars[indexPath.row].model)"
         return cell
     }
 }

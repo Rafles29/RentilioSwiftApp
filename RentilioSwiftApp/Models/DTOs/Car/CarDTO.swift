@@ -24,17 +24,8 @@ struct CarDTO: Codable {
     
 }
 
-enum CarType: Codable {
-    
-    init(from decoder: Decoder) throws {
-        fatalError()
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        fatalError()
-    }
-    
-    case coupe
+enum CarType: Int, Codable {
+    case HATCHBACK, SEDAN, SUV, COUPE, CONVERTIBLE, MOTORCYCLE, VAN, TRUCK, OTHER
 }
 
 /*

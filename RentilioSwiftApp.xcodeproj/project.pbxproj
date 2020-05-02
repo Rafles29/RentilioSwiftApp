@@ -50,6 +50,7 @@
 		DB6E716424531F610041BD1F /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E716324531F610041BD1F /* FifthViewController.swift */; };
 		DB8F1CBE24588E01007600B4 /* MyCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F1CBD24588E01007600B4 /* MyCarsViewController.swift */; };
 		DB8F1CC0245894A6007600B4 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F1CBF245894A6007600B4 /* AddCarViewController.swift */; };
+		DB95D31B245DCEA5006CC1C8 /* CarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95D31A245DCEA5006CC1C8 /* CarManager.swift */; };
 		DBA1AE26245C9EB0009F0E6C /* CarHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1AE25245C9EB0009F0E6C /* CarHttpService.swift */; };
 		DBA1AE29245CA796009F0E6C /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1AE28245CA796009F0E6C /* AccountManager.swift */; };
 		DBAF092A2455964000E34871 /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF09282455964000E34871 /* ReservationTableViewCell.swift */; };
@@ -105,6 +106,7 @@
 		DB6E716324531F610041BD1F /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		DB8F1CBD24588E01007600B4 /* MyCarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarsViewController.swift; sourceTree = "<group>"; };
 		DB8F1CBF245894A6007600B4 /* AddCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
+		DB95D31A245DCEA5006CC1C8 /* CarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarManager.swift; sourceTree = "<group>"; };
 		DBA1AE25245C9EB0009F0E6C /* CarHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHttpService.swift; sourceTree = "<group>"; };
 		DBA1AE28245CA796009F0E6C /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		DBAF09282455964000E34871 /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				DBA1AE28245CA796009F0E6C /* AccountManager.swift */,
+				DB95D31A245DCEA5006CC1C8 /* CarManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				DB1B8524245AD52D002F3120 /* TokenDTO.swift in Sources */,
 				DB1B8552245C7563002F3120 /* DictionaryConvertor.swift in Sources */,
 				DB1B854C245C63F3002F3120 /* Constants.swift in Sources */,
+				DB95D31B245DCEA5006CC1C8 /* CarManager.swift in Sources */,
 				DB1B8537245B022A002F3120 /* PriceDTO.swift in Sources */,
 				DB6E714724531BB20041BD1F /* AppDelegate.swift in Sources */,
 				DB1B852D245AD7B6002F3120 /* CarDTO.swift in Sources */,

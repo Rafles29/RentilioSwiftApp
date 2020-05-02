@@ -11,8 +11,8 @@ import Foundation
 struct RentDTO: Codable {
     var rentId: Int
     var confirmed: Bool
-    var startDate: Date
-    var endDate: Date
+    var startDate: String
+    var endDate: String
     var price: Double
     var adress: String
     var userId: String

@@ -16,25 +16,9 @@ struct PerformanceDTO: Codable {
     var fuel: Fuel
 }
 
-enum Gearbox: Codable {
-    init(from decoder: Decoder) throws {
-        fatalError()
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        fatalError("init(from:) has not been implemented")
-    }
-    
-    case MANUAL
+enum Gearbox: Int, Codable {
+    case AUTOMATIC, MANUAL
 }
-enum Fuel: Codable {
-    init(from decoder: Decoder) throws {
-        fatalError("init(from:) has not been implemented")
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        fatalError("init(from:) has not been implemented")
-    }
-    
-    case PETROL
+enum Fuel: Int, Codable {
+    case EV, HYBRID, DIESEL, PETROL
 }

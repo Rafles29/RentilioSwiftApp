@@ -15,7 +15,8 @@ class CarImageDTO: ImageDTO{
     }
     
     required init(from decoder: Decoder) throws {
-        fatalError("init(from:) has not been implemented")
+        self.carId = 0
+        try! super.init(from: decoder)
     }
     var carId: Int
 }

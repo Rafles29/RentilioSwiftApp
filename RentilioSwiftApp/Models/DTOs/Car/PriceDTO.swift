@@ -19,14 +19,7 @@ struct PriceDTO: Codable {
     var currency: Currency
 }
 
-enum Currency: Codable {
-    init(from decoder: Decoder) throws {
-        fatalError()
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        fatalError()
-    }
+enum Currency: Int, Codable {
     
     case PLN
 }

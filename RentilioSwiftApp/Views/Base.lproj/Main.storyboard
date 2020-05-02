@@ -821,7 +821,7 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="hLB-VP-1rw">
-                                <rect key="frame" x="64" y="236.33333333333337" width="247" height="166"/>
+                                <rect key="frame" x="64" y="236.33333333333337" width="247" height="298"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sdy-tv-Aco">
                                         <rect key="frame" x="0.0" y="0.0" width="247" height="34"/>
@@ -836,16 +836,29 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="hasło" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3P-By-JJq">
                                         <rect key="frame" x="0.0" y="131.99999999999997" width="247" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="imię" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVL-2Z-VTh">
+                                        <rect key="frame" x="0.0" y="197.99999999999997" width="247" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nazwisko" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UCr-fT-OJr">
+                                        <rect key="frame" x="0.0" y="264" width="247" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhM-Zg-b2O">
-                                <rect key="frame" x="100" y="452.33333333333331" width="175" height="40"/>
+                                <rect key="frame" x="100" y="584.33333333333337" width="175" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="pdk-Po-sE2"/>
                                 </constraints>
                                 <state key="normal" title="zarejestruj się"/>
+                                <connections>
+                                    <action selector="registerButtonPressed:" destination="0bo-Ak-Tfn" eventType="touchUpInside" id="Rsg-ag-Nyg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -866,6 +879,13 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                         <viewLayoutGuide key="safeArea" id="L3j-qS-KBI"/>
                     </view>
                     <navigationItem key="navigationItem" title="Rejestracja" id="cfX-KF-oHs"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="K9b-XM-7Pd" id="kJD-DK-bMN"/>
+                        <outlet property="firstNameTextField" destination="JVL-2Z-VTh" id="ICm-5V-8PM"/>
+                        <outlet property="lastNameTextField" destination="UCr-fT-OJr" id="GK9-6G-qta"/>
+                        <outlet property="loginTextField" destination="Sdy-tv-Aco" id="ZZF-qc-wue"/>
+                        <outlet property="passwordTextField" destination="B3P-By-JJq" id="a86-EX-64k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKU-cL-Rzo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -996,7 +1016,7 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="hasło" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Clk-PS-uRO">
                                         <rect key="frame" x="0.0" y="65.999999999999972" width="247" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
