@@ -21,8 +21,20 @@ class CarManager {
         httpService.delegate = self
     }
     
+    func calculateRating(forCar car: CarDTO) -> Double {
+        var sum = 0
+        for review in car.reviews {
+            sum += review.value
+        }
+        return Double(sum) / Double(car.reviews.count)
+    }
+    
     func getCars() {
         httpService.getCars()
+    }
+    
+    func getCars(carName: String) {
+        httpService.getCars(carName: carName)
     }
 }
 

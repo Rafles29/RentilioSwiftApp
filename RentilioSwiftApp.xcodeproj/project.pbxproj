@@ -41,7 +41,7 @@
 		DB6E714724531BB20041BD1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E714624531BB20041BD1F /* AppDelegate.swift */; };
 		DB6E714924531BB20041BD1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E714824531BB20041BD1F /* SceneDelegate.swift */; };
 		DB6E714B24531BB20041BD1F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E714A24531BB20041BD1F /* FirstViewController.swift */; };
-		DB6E714D24531BB20041BD1F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E714C24531BB20041BD1F /* SecondViewController.swift */; };
+		DB6E714D24531BB20041BD1F /* SearchCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E714C24531BB20041BD1F /* SearchCarsViewController.swift */; };
 		DB6E715024531BB20041BD1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6E714E24531BB20041BD1F /* Main.storyboard */; };
 		DB6E715224531BB40041BD1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6E715124531BB40041BD1F /* Assets.xcassets */; };
 		DB6E715524531BB40041BD1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6E715324531BB40041BD1F /* LaunchScreen.storyboard */; };
@@ -51,6 +51,8 @@
 		DB8F1CBE24588E01007600B4 /* MyCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F1CBD24588E01007600B4 /* MyCarsViewController.swift */; };
 		DB8F1CC0245894A6007600B4 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F1CBF245894A6007600B4 /* AddCarViewController.swift */; };
 		DB95D31B245DCEA5006CC1C8 /* CarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95D31A245DCEA5006CC1C8 /* CarManager.swift */; };
+		DB95D31D245EC70E006CC1C8 /* ReviewDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95D31C245EC70E006CC1C8 /* ReviewDTO.swift */; };
+		DB95D31F245ECA1E006CC1C8 /* ImageURLReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95D31E245ECA1E006CC1C8 /* ImageURLReader.swift */; };
 		DBA1AE26245C9EB0009F0E6C /* CarHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1AE25245C9EB0009F0E6C /* CarHttpService.swift */; };
 		DBA1AE29245CA796009F0E6C /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1AE28245CA796009F0E6C /* AccountManager.swift */; };
 		DBAF092A2455964000E34871 /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF09282455964000E34871 /* ReservationTableViewCell.swift */; };
@@ -96,7 +98,7 @@
 		DB6E714624531BB20041BD1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB6E714824531BB20041BD1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DB6E714A24531BB20041BD1F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DB6E714C24531BB20041BD1F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DB6E714C24531BB20041BD1F /* SearchCarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCarsViewController.swift; sourceTree = "<group>"; };
 		DB6E714F24531BB20041BD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB6E715124531BB40041BD1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB6E715424531BB40041BD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,8 @@
 		DB8F1CBD24588E01007600B4 /* MyCarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarsViewController.swift; sourceTree = "<group>"; };
 		DB8F1CBF245894A6007600B4 /* AddCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
 		DB95D31A245DCEA5006CC1C8 /* CarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarManager.swift; sourceTree = "<group>"; };
+		DB95D31C245EC70E006CC1C8 /* ReviewDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDTO.swift; sourceTree = "<group>"; };
+		DB95D31E245ECA1E006CC1C8 /* ImageURLReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURLReader.swift; sourceTree = "<group>"; };
 		DBA1AE25245C9EB0009F0E6C /* CarHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHttpService.swift; sourceTree = "<group>"; };
 		DBA1AE28245CA796009F0E6C /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		DBAF09282455964000E34871 /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 				DB1B8536245B022A002F3120 /* PriceDTO.swift */,
 				DB1B8538245B0255002F3120 /* AdressDTO.swift */,
 				DB1B853A245B0276002F3120 /* PerformanceDTO.swift */,
+				DB95D31C245EC70E006CC1C8 /* ReviewDTO.swift */,
 			);
 			path = Car;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				DB1B8551245C7563002F3120 /* DictionaryConvertor.swift */,
+				DB95D31E245ECA1E006CC1C8 /* ImageURLReader.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -291,7 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				DB6E714A24531BB20041BD1F /* FirstViewController.swift */,
-				DB6E714C24531BB20041BD1F /* SecondViewController.swift */,
+				DB6E714C24531BB20041BD1F /* SearchCarsViewController.swift */,
 				DB6E715F24531F430041BD1F /* ThirdViewController.swift */,
 				DB6E716124531F510041BD1F /* ForthViewController.swift */,
 				DB6E716324531F610041BD1F /* FifthViewController.swift */,
@@ -404,9 +410,10 @@
 				DB1B8545245B0EB2002F3120 /* ConverstaionDTO.swift in Sources */,
 				DB11C24724549AD300BF3391 /* NotificationTableViewCell.swift in Sources */,
 				DB6E716224531F510041BD1F /* ForthViewController.swift in Sources */,
+				DB95D31F245ECA1E006CC1C8 /* ImageURLReader.swift in Sources */,
 				DB1B8541245B0D1A002F3120 /* UserDTO.swift in Sources */,
 				DB1B853B245B0276002F3120 /* PerformanceDTO.swift in Sources */,
-				DB6E714D24531BB20041BD1F /* SecondViewController.swift in Sources */,
+				DB6E714D24531BB20041BD1F /* SearchCarsViewController.swift in Sources */,
 				DB65659B2456192100CE5EEA /* MessageCell.swift in Sources */,
 				DB8F1CBE24588E01007600B4 /* MyCarsViewController.swift in Sources */,
 				DB1B853D245B02A8002F3120 /* RentDTO.swift in Sources */,
@@ -421,6 +428,7 @@
 				DB1B8524245AD52D002F3120 /* TokenDTO.swift in Sources */,
 				DB1B8552245C7563002F3120 /* DictionaryConvertor.swift in Sources */,
 				DB1B854C245C63F3002F3120 /* Constants.swift in Sources */,
+				DB95D31D245EC70E006CC1C8 /* ReviewDTO.swift in Sources */,
 				DB95D31B245DCEA5006CC1C8 /* CarManager.swift in Sources */,
 				DB1B8537245B022A002F3120 /* PriceDTO.swift in Sources */,
 				DB6E714724531BB20041BD1F /* AppDelegate.swift in Sources */,

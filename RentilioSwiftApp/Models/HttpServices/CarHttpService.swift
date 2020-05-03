@@ -23,4 +23,12 @@ struct CarHttpService {
             self.delegate?.carsFetched(cars: data)
         }
     }
+    
+    func getCars(carName: String) {
+        let parameters: [String: Any] = ["CarName": carName]
+        AF.request(K.API.base + K.API.Car.base, method: .get, parameters: parameters).responseDecodable(of: [CarDTO].self) { response in
+            guard let data = response.value else { return }
+            self.delegate?.carsFetched(cars: data)
+        }
+    }
 }

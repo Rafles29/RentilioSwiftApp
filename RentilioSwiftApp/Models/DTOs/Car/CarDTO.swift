@@ -21,11 +21,36 @@ struct CarDTO: Codable {
     var performance: PerformanceDTO
     var carImages: [CarImageDTO]
     var rents: [RentDTO]
+    let reviews: [ReviewDTO]
     
 }
 
 enum CarType: Int, Codable {
     case HATCHBACK, SEDAN, SUV, COUPE, CONVERTIBLE, MOTORCYCLE, VAN, TRUCK, OTHER
+    func toString() -> String {
+        switch self {
+        case .HATCHBACK:
+            return "Hatchback"
+        case .SEDAN:
+            return "Sedan"
+        case .SUV:
+            return "Suv"
+        case .COUPE:
+            return "Coupe"
+        case .CONVERTIBLE:
+            return "Cabrio"
+        case .MOTORCYCLE:
+            return "Motor"
+        case .VAN:
+            return "Van"
+        case .TRUCK:
+            return "Ciężarówka"
+        case .OTHER:
+            return "Inne"
+        default:
+            return ""
+        }
+    }
 }
 
 /*
