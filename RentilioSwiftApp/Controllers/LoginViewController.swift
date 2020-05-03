@@ -44,7 +44,6 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: AccountManagerDelegate {
     func userLoggedIn() {
-        print("It works!")
         self.navigationController?.popToRootViewController(animated: true)
     }
     

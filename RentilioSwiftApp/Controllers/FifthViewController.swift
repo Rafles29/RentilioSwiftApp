@@ -23,6 +23,14 @@ class FifthViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MenuToProfile" {
+            let vc = segue.destination as! ProfileViewController
+            let userId = AccountManager.userId
+            vc.userId = userId
+        }
+    }
 }
 
 extension FifthViewController: UITableViewDelegate {

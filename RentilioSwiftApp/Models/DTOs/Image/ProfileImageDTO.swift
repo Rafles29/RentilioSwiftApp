@@ -9,7 +9,6 @@
 import Foundation
 
 class ProfileImageDTO: ImageDTO {
-    var profileId: Int
     
     init(imageId: String, link: String, name: String, profileId: Int) {
         self.profileId = profileId
@@ -17,6 +16,8 @@ class ProfileImageDTO: ImageDTO {
     }
     
     required init(from decoder: Decoder) throws {
-        fatalError("init(from:) has not been implemented")
+        self.profileId = 0
+        try! super.init(from: decoder)
     }
+    var profileId: Int
 }

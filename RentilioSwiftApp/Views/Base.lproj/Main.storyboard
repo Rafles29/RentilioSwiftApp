@@ -183,10 +183,10 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mBn-S7-dLJ">
                                                         <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="40.666666666666664"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9nv-cJ-OHe">
-                                                                <rect key="frame" x="0.0" y="1.6666666666666661" width="41.666666666666664" height="17.666666666666664"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flame" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9nv-cJ-OHe">
+                                                                <rect key="frame" x="0.0" y="-0.66666666666666785" width="41.666666666666664" height="20.333333333333332"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJy-JZ-t65">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJy-JZ-t65">
                                                                 <rect key="frame" x="0.0" y="20.333333333333371" width="41.666666666666664" height="20.333333333333329"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -197,10 +197,10 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ypu-ie-y4N">
                                                         <rect key="frame" x="100.33333333333333" y="0.0" width="41.666666666666671" height="40.666666666666664"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iKP-V1-oT9">
-                                                                <rect key="frame" x="0.0" y="1.6666666666666661" width="41.666666666666664" height="17.666666666666664"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bed.double" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iKP-V1-oT9">
+                                                                <rect key="frame" x="0.0" y="3.6666666666666643" width="41.666666666666664" height="15.333333333333336"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1B-GS-lFl">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1B-GS-lFl">
                                                                 <rect key="frame" x="0.0" y="20.333333333333371" width="41.666666666666664" height="20.333333333333329"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -211,10 +211,10 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Pvb-xV-qKc">
                                                         <rect key="frame" x="201" y="0.0" width="41.666666666666657" height="40.666666666666664"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3Wi-EH-H0g">
-                                                                <rect key="frame" x="0.0" y="1.6666666666666661" width="41.666666666666664" height="17.666666666666664"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speedometer" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3Wi-EH-H0g">
+                                                                <rect key="frame" x="0.0" y="0.99999999999999822" width="41.666666666666664" height="19"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJU-jO-KxU">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJU-jO-KxU">
                                                                 <rect key="frame" x="0.0" y="20.333333333333371" width="41.666666666666664" height="20.333333333333329"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -225,10 +225,10 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8Ev-dK-fUj">
                                                         <rect key="frame" x="301.33333333333331" y="0.0" width="41.666666666666686" height="40.666666666666664"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9rO-0h-E47">
-                                                                <rect key="frame" x="0.0" y="1.6666666666666661" width="41.666666666666664" height="17.666666666666664"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9rO-0h-E47">
+                                                                <rect key="frame" x="0.0" y="-3.5527136788005009e-15" width="41.666666666666664" height="20.666666666666671"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unc-7l-AXv">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unc-7l-AXv">
                                                                 <rect key="frame" x="0.0" y="20.333333333333371" width="41.666666666666664" height="20.333333333333329"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -335,6 +335,18 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                     </view>
                     <navigationItem key="navigationItem" id="3jB-3h-5rW"/>
                     <size key="freeformSize" width="375" height="1300"/>
+                    <connections>
+                        <outlet property="carDescription" destination="1P5-U8-wgv" id="H1p-OO-9uS"/>
+                        <outlet property="carName" destination="sfl-PG-KJG" id="jds-hq-e2x"/>
+                        <outlet property="carOwnerImage" destination="8FO-Jb-vIy" id="L7y-p1-PTS"/>
+                        <outlet property="carOwnerName" destination="0Xx-L8-s4a" id="3az-Qh-v4a"/>
+                        <outlet property="carType" destination="LlE-eP-e8P" id="Qxk-zJ-E9i"/>
+                        <outlet property="fuel" destination="yJy-JZ-t65" id="CMH-ZZ-vOU"/>
+                        <outlet property="gearbox" destination="unc-7l-AXv" id="gTg-CO-Sl1"/>
+                        <outlet property="horsePower" destination="WJU-jO-KxU" id="g1A-CP-zdR"/>
+                        <outlet property="image" destination="Uu1-ha-OaV" id="MLJ-Qq-7wa"/>
+                        <outlet property="seats" destination="I1B-GS-lFl" id="ToT-b0-Tnz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zig-Kr-yug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1092,9 +1104,9 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Id8-bF-rum">
-                                                <rect key="frame" x="95" y="76.999999999999986" width="185" height="181.66666666666669"/>
+                                                <rect key="frame" x="95" y="77" width="185" height="185"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Id8-bF-rum" secondAttribute="height" multiplier="1:1" id="iAr-8f-c7z"/>
+                                                    <constraint firstAttribute="width" secondItem="Id8-bF-rum" secondAttribute="height" multiplier="1:1" constant="-3.3333333333333144" id="iAr-8f-c7z"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anna Goodwin" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6f-aq-hyW">
@@ -1154,7 +1166,7 @@ Udanych podróży!</string>
                                             <constraint firstAttribute="trailing" secondItem="Id8-bF-rum" secondAttribute="trailing" constant="95" id="QMK-V1-dsQ"/>
                                             <constraint firstItem="Id8-bF-rum" firstAttribute="top" secondItem="2oc-He-MhC" secondAttribute="top" constant="75" id="QwM-t9-IES"/>
                                             <constraint firstItem="INb-90-MpI" firstAttribute="top" secondItem="X6f-aq-hyW" secondAttribute="bottom" constant="32.333333333333314" id="URP-jY-sXL"/>
-                                            <constraint firstItem="X6f-aq-hyW" firstAttribute="top" secondItem="Id8-bF-rum" secondAttribute="bottom" constant="16" id="Zfg-B8-HzB"/>
+                                            <constraint firstItem="X6f-aq-hyW" firstAttribute="top" secondItem="Id8-bF-rum" secondAttribute="bottom" constant="12.666666666666686" id="Zfg-B8-HzB"/>
                                             <constraint firstItem="C0H-8S-vf5" firstAttribute="leading" secondItem="2oc-He-MhC" secondAttribute="leading" id="gS5-m1-pKy"/>
                                             <constraint firstItem="SWn-1b-b5r" firstAttribute="top" secondItem="lN9-gN-CWM" secondAttribute="bottom" constant="43" id="hee-6b-dXI"/>
                                             <constraint firstItem="C0H-8S-vf5" firstAttribute="top" secondItem="SWn-1b-b5r" secondAttribute="bottom" constant="8" id="iTa-eC-dT5"/>
@@ -1192,8 +1204,12 @@ Udanych podróży!</string>
                     <navigationItem key="navigationItem" title="Profil" id="Ocs-dX-VV5"/>
                     <size key="freeformSize" width="375" height="1200"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="K62-dZ-apw" id="g54-y9-mYT"/>
                         <outlet property="carCollection" destination="C0H-8S-vf5" id="1df-TB-PdU"/>
                         <outlet property="scrollVew" destination="ady-uR-sbv" id="LTj-sy-enx"/>
+                        <outlet property="userDescription" destination="lN9-gN-CWM" id="T4R-Lk-hqV"/>
+                        <outlet property="userName" destination="X6f-aq-hyW" id="ejZ-Fe-9Z4"/>
+                        <outlet property="userProfileImage" destination="Id8-bF-rum" id="Ld2-Kr-cig"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DtU-EW-vTM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1202,9 +1218,11 @@ Udanych podróży!</string>
         </scene>
     </scenes>
     <resources>
-        <image name="car" catalog="system" width="128" height="93"/>
+        <image name="bed.double" catalog="system" width="128" height="80"/>
         <image name="divo" width="366" height="215"/>
         <image name="ellipsis.circle" catalog="system" width="128" height="121"/>
+        <image name="flame" catalog="system" width="109" height="128"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="map" catalog="system" width="128" height="113"/>
@@ -1212,6 +1230,7 @@ Udanych podróży!</string>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="second" width="30" height="30"/>
         <image name="skrzynka1" width="328" height="117"/>
+        <image name="speedometer" catalog="system" width="128" height="121"/>
         <image name="tray.full" catalog="system" width="128" height="88"/>
     </resources>
 </document>

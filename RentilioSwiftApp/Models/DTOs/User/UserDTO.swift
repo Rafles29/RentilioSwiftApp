@@ -18,7 +18,7 @@ struct UserDTO: Codable {
 struct ProfileDTO: Codable {
     var firstName: String
     var lastName: String
-    var description: String
+    var description: String?
     var profileImages: [ProfileImageDTO]
     var userId: String
     

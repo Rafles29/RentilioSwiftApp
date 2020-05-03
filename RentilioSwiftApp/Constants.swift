@@ -19,5 +19,8 @@ struct K {
         struct Car {
             static let base = "Cars/"
         }
+        struct User {
+            static let base = "Users/"
+        }
     }
 }

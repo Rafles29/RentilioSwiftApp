@@ -12,7 +12,8 @@ class MyCarsViewController: UIViewController {
 
     @IBOutlet weak var carCollection: UICollectionView!
     
-    var cars = ["car1", "car2"]
+    var cars: [CarDTO] = []
+    let carManager = CarManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +21,25 @@ class MyCarsViewController: UIViewController {
         carCollection.register(UINib(nibName: "CarCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CarCell")
         carCollection.delegate = self
         carCollection.dataSource = self
+        
+        carManager.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        carManager.getCars()
     }
 
+}
+
+extension MyCarsViewController: CarManagerDelegate {
+    func carsFetched(_ cars: [CarDTO]) {
+        self.cars = cars
+        DispatchQueue.main.async {
+            self.carCollection.reloadData()
+        }
+    }
 }
 
 extension MyCarsViewController: UICollectionViewDelegate {
@@ -41,6 +59,8 @@ extension MyCarsViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CarCell", for: indexPath) as! CarCollectionViewCell
+        let car = cars[indexPath.row]
+        carManager.prepare(cell: cell, using: car)
         return cell
     }
 }

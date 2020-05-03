@@ -59,10 +59,11 @@ class AccountManager {
     
     private static func isTokenFresh(_ token: String) ->  Bool {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss"
+        dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
         guard let validationDate = dateFormatter.date(from: token) else { return false }
         let now = Date()
-        return now < validationDate
+        print(now > validationDate)
+        return now > validationDate
     }
     
     private static var isAccessTokenFresh: Bool {

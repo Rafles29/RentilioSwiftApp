@@ -16,5 +16,5 @@ class ImageDTO: Codable {
     }
     var imageId: String
     var link: String
-    var name: String
+    var name: String?
 }

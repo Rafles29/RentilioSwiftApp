@@ -18,7 +18,32 @@ struct PerformanceDTO: Codable {
 
 enum Gearbox: Int, Codable {
     case AUTOMATIC, MANUAL
+    func toString() -> String {
+        switch self {
+        case .AUTOMATIC:
+            return "Automat"
+        case .MANUAL:
+            return "Manual"
+        default:
+            return ""
+        }
+    }
 }
 enum Fuel: Int, Codable {
     case EV, HYBRID, DIESEL, PETROL
+    
+    func toString() -> String {
+        switch self {
+        case .EV:
+            return "Elektryk"
+        case .HYBRID:
+            return "Hybrid"
+        case .DIESEL:
+            return "Diesel"
+        case .PETROL:
+            return "Benzyna"
+        default:
+            return ""
+        }
+    }
 }

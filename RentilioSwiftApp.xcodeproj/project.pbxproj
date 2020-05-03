@@ -53,6 +53,8 @@
 		DB95D31B245DCEA5006CC1C8 /* CarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95D31A245DCEA5006CC1C8 /* CarManager.swift */; };
 		DB95D31D245EC70E006CC1C8 /* ReviewDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95D31C245EC70E006CC1C8 /* ReviewDTO.swift */; };
 		DB95D31F245ECA1E006CC1C8 /* ImageURLReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95D31E245ECA1E006CC1C8 /* ImageURLReader.swift */; };
+		DB95D321245F119B006CC1C8 /* UserHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95D320245F119B006CC1C8 /* UserHttpService.swift */; };
+		DB95D323245F1296006CC1C8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95D322245F1296006CC1C8 /* UserManager.swift */; };
 		DBA1AE26245C9EB0009F0E6C /* CarHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1AE25245C9EB0009F0E6C /* CarHttpService.swift */; };
 		DBA1AE29245CA796009F0E6C /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1AE28245CA796009F0E6C /* AccountManager.swift */; };
 		DBAF092A2455964000E34871 /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF09282455964000E34871 /* ReservationTableViewCell.swift */; };
@@ -111,6 +113,8 @@
 		DB95D31A245DCEA5006CC1C8 /* CarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarManager.swift; sourceTree = "<group>"; };
 		DB95D31C245EC70E006CC1C8 /* ReviewDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDTO.swift; sourceTree = "<group>"; };
 		DB95D31E245ECA1E006CC1C8 /* ImageURLReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURLReader.swift; sourceTree = "<group>"; };
+		DB95D320245F119B006CC1C8 /* UserHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHttpService.swift; sourceTree = "<group>"; };
+		DB95D322245F1296006CC1C8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		DBA1AE25245C9EB0009F0E6C /* CarHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHttpService.swift; sourceTree = "<group>"; };
 		DBA1AE28245CA796009F0E6C /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		DBAF09282455964000E34871 /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 			children = (
 				DB1B8549245B2AB3002F3120 /* AuthenticationHttpService.swift */,
 				DBA1AE25245C9EB0009F0E6C /* CarHttpService.swift */,
+				DB95D320245F119B006CC1C8 /* UserHttpService.swift */,
 			);
 			path = HttpServices;
 			sourceTree = "<group>";
@@ -268,16 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				DB6E714E24531BB20041BD1F /* Main.storyboard */,
-				DB6565992456192100CE5EEA /* MessageCell.swift */,
-				DB65659A2456192100CE5EEA /* MessageCell.xib */,
-				DB11C24124548F8E00BF3391 /* MessageTableViewCell.swift */,
-				DB11C24224548F8E00BF3391 /* MessageTableViewCell.xib */,
-				DB11C24524549AD300BF3391 /* NotificationTableViewCell.swift */,
-				DB11C24624549AD300BF3391 /* NotificationTableViewCell.xib */,
-				DBAF09282455964000E34871 /* ReservationTableViewCell.swift */,
-				DBAF09292455964000E34871 /* ReservationTableViewCell.xib */,
-				DB6D74022455A83F005E28D8 /* CarCollectionViewCell.swift */,
-				DB6D74032455A83F005E28D8 /* CarCollectionViewCell.xib */,
+				DB95D325245F268F006CC1C8 /* Collecion Cells */,
+				DB95D324245F2675006CC1C8 /* Table Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,11 +310,36 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		DB95D324245F2675006CC1C8 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DB6565992456192100CE5EEA /* MessageCell.swift */,
+				DB65659A2456192100CE5EEA /* MessageCell.xib */,
+				DB11C24124548F8E00BF3391 /* MessageTableViewCell.swift */,
+				DB11C24224548F8E00BF3391 /* MessageTableViewCell.xib */,
+				DB11C24524549AD300BF3391 /* NotificationTableViewCell.swift */,
+				DB11C24624549AD300BF3391 /* NotificationTableViewCell.xib */,
+				DBAF09282455964000E34871 /* ReservationTableViewCell.swift */,
+				DBAF09292455964000E34871 /* ReservationTableViewCell.xib */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
+		DB95D325245F268F006CC1C8 /* Collecion Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DB6D74022455A83F005E28D8 /* CarCollectionViewCell.swift */,
+				DB6D74032455A83F005E28D8 /* CarCollectionViewCell.xib */,
+			);
+			path = "Collecion Cells";
+			sourceTree = "<group>";
+		};
 		DBA1AE27245CA781009F0E6C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				DBA1AE28245CA796009F0E6C /* AccountManager.swift */,
 				DB95D31A245DCEA5006CC1C8 /* CarManager.swift */,
+				DB95D322245F1296006CC1C8 /* UserManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -404,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB95D321245F119B006CC1C8 /* UserHttpService.swift in Sources */,
 				DBA1AE26245C9EB0009F0E6C /* CarHttpService.swift in Sources */,
 				DB1B852F245B0162002F3120 /* ImageDTO.swift in Sources */,
 				DB6565982456154200CE5EEA /* MessengerViewController.swift in Sources */,
@@ -449,6 +472,7 @@
 				DB1B8543245B0E5F002F3120 /* ProfileImageDTO.swift in Sources */,
 				DB1B8531245B01B0002F3120 /* CarImageDTO.swift in Sources */,
 				DB6D74042455A83F005E28D8 /* CarCollectionViewCell.swift in Sources */,
+				DB95D323245F1296006CC1C8 /* UserManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

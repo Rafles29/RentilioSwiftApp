@@ -15,6 +15,7 @@ class SearchCarsViewController: UIViewController {
     
     var cars:[CarDTO] = []
     let carManager = CarManager()
+    var pickedCarId: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +29,30 @@ class SearchCarsViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController!.setNavigationBarHidden(true, animated: false)
         searchCars()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController!.setNavigationBarHidden(false, animated: false)
+    }
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SearchToCarDetails" {
+            let vc = segue.destination as! CarDetailsViewController
+            vc.carId = pickedCarId
+        }
     }
 
 }
 
 extension SearchCarsViewController: CarManagerDelegate {
     func carsFetched(_ cars: [CarDTO]) {
-        print(cars)
         self.cars = cars
         DispatchQueue.main.async {
             self.carCollection.reloadData()
@@ -67,6 +84,7 @@ extension SearchCarsViewController: UISearchBarDelegate {
 extension SearchCarsViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        pickedCarId = cars[indexPath.row].carId
         self.performSegue(withIdentifier: "SearchToCarDetails", sender: self)
     }
     
@@ -82,19 +100,7 @@ extension SearchCarsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CarCell", for: indexPath) as! CarCollectionViewCell
         let car = cars[indexPath.row]
-        let carRating = carManager.calculateRating(forCar: car)
-        cell.carName.text = "\(car.manufactor) \(car.model)"
-        cell.carType.text = car.type.toString()
-        if carRating.isNaN {
-            cell.rating.text = "\(0) ⭐️"
-        } else {
-            cell.rating.text = "\(carRating) ⭐️"
-        }
-        cell.reviews.text =  "\(car.reviews.count) recenzji"
-        cell.image.setImage(from: car.carImages[0].link)
-        if carRating < 4 ||  carRating.isNaN{
-            cell.bestHost.isHidden = true
-        }
+        carManager.prepare(cell: cell, using: car)
         return cell
     }
 }
