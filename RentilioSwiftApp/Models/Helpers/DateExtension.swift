@@ -23,4 +23,10 @@ extension Date {
         let time = calendar.dateComponents([.hour,.minute], from: self)
         return "\(time.hour!):\(time.minute!)"
     }
+    
+    func getDate() -> String {
+        let calendar = Calendar.current
+        let time = calendar.dateComponents([.year,.month, .day], from: self)
+        return "\(time.year!).\(time.month!).\(time.year!)"
+    }
 }

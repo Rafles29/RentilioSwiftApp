@@ -434,10 +434,10 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
             </objects>
             <point key="canvasLocation" x="2597.5999999999999" y="755.9113300492611"/>
         </scene>
-        <!--Forth View Controller-->
+        <!--Rents View Controller-->
         <scene sceneID="erk-lW-1a7">
             <objects>
-                <viewController id="fhc-6B-2fc" customClass="ForthViewController" customModule="RentilioSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fhc-6B-2fc" customClass="RentsViewController" customModule="RentilioSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4vB-nI-NCu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -481,8 +481,8 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
                     </view>
                     <navigationItem key="navigationItem" id="GMH-Wq-F5M"/>
                     <connections>
-                        <outlet property="tripSegment" destination="7Ff-tj-H1p" id="fIJ-Lj-xSs"/>
-                        <outlet property="tripTable" destination="oBr-p1-g7k" id="xay-cR-jOk"/>
+                        <outlet property="rentSegment" destination="7Ff-tj-H1p" id="fIJ-Lj-xSs"/>
+                        <outlet property="rentsTable" destination="oBr-p1-g7k" id="xay-cR-jOk"/>
                         <segue destination="5Gt-6r-eiX" kind="show" identifier="ToTripDetails" id="5G5-2c-BBM"/>
                     </connections>
                 </viewController>

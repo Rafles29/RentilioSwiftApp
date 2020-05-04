@@ -25,6 +25,9 @@ struct K {
         struct Convesration {
             static let base = "Conversations/"
         }
+        struct Rent {
+            static let base = "Rents/"
+        }
         struct Notification {
             static let base = "Notifications/"
         }

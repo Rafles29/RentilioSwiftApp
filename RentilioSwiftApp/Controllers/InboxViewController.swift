@@ -62,7 +62,7 @@ extension InboxViewController: NotificationManagerDelegate {
         self.notifications = notifications
         DispatchQueue.main.async {
             self.inboxTableView.reloadData()
-            self.inboxTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+            //self.inboxTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
         }
     }
     
@@ -74,7 +74,7 @@ extension InboxViewController : ConversationManagerDelegate {
         self.conversations = conversations
         DispatchQueue.main.async {
             self.inboxTableView.reloadData()
-            self.inboxTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+            //self.inboxTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
         }
     }
 }
