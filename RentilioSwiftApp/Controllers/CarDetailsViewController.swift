@@ -41,6 +41,18 @@ class CarDetailsViewController: UIViewController {
         
         carManager.getCar(byId: carId!)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CarDetailsToRent" {
+            let vc = segue.destination as! AddRentViewController
+            vc.carId = self.carId
+        }
+    }
+    
+    @IBAction func rentButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "CarDetailsToRent", sender: self)
+    }
+    
 }
 
 extension CarDetailsViewController: UserManagerDelegate {
