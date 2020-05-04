@@ -10,10 +10,10 @@ import Foundation
 
 struct NotificationDTO: Codable {
     var notificationId: String
-    var dateTime: Date
+    var dateTime: String
     var content: String
-    var type: String
-    var value: String
+    var type: String?
+    var value: String?
     var userId: String
 }
 

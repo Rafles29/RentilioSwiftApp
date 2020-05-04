@@ -10,7 +10,7 @@
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="RentilioSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="HomeViewController" customModule="RentilioSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,10 +352,10 @@ Car Week w 2018 roku. Produkcja modelu została ograniczona do 40 egzemplarzy. C
             </objects>
             <point key="canvasLocation" x="2597.5999999999999" y="-152.95566502463055"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Inbox View Controller-->
         <scene sceneID="jM4-2d-5Ey">
             <objects>
-                <viewController id="UaG-5o-xFB" customClass="ThirdViewController" customModule="RentilioSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UaG-5o-xFB" customClass="InboxViewController" customModule="RentilioSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uAc-yD-HS5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

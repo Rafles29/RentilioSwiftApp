@@ -12,8 +12,8 @@ struct ConversationDTO: Codable {
     var conversationId: String
     var me: UserDTO
     var otherGuy: UserDTO
-    var read: Bool
-    var lastMessage: MessageDTO
+    var read: Bool?
+    var lastMessage: MessageDTO?
 }
 
 /*

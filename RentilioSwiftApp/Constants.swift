@@ -22,5 +22,14 @@ struct K {
         struct User {
             static let base = "Users/"
         }
+        struct Convesration {
+            static let base = "Conversations/"
+        }
+        struct Notification {
+            static let base = "Notifications/"
+        }
+    }
+    struct DateFormat {
+        static let format = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
     }
 }

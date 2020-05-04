@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  InboxViewController.swift
 //  RentilioSwiftApp
 //
 //  Created by Rafal Wozniak on 24/04/2020.
@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class InboxViewController: UIViewController {
 
     @IBOutlet weak var inboxSegment: UISegmentedControl!
     @IBOutlet weak var inboxTableView: UITableView!
-    var notifications = ["Powiadomienie", "Powiadomienie", "Powiadomienie", "Powiadomienie", "Powiadomienie", "Powiadomienie", "Powiadomienie", "Powiadomienie", "Powiadomienie"]
-    var messages = ["Wiadomość","Wiadomość", "Wiadomość", "Wiadomość","Wiadomość", "Wiadomość", "Wiadomość","Wiadomość", "Wiadomość"]
+    var notifications: [NotificationDTO] = []
+    var conversations: [ConversationDTO] = []
+    let conversationManager = ConversationManager()
+    let notificationManager = NotificationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,19 +30,24 @@ class ThirdViewController: UIViewController {
         inboxTableView.register(UINib(nibName: "NotificationTableViewCell", bundle: nil), forCellReuseIdentifier: "NotificationCell")
         inboxTableView.delegate = self
         inboxTableView.dataSource = self
+        
+        conversationManager.delegate = self
+        notificationManager.delegate = self
     }
     // must be internal or public.
     @objc func segmentChanged() {
-        DispatchQueue.main.async {
-            self.inboxTableView.reloadData()
-            self.inboxTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+        if inboxSegment.selectedSegmentIndex == 1 {
+            conversationManager.getConversations()
+        } else {
+            notificationManager.getNotifications()
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         self.navigationController!.setNavigationBarHidden(true, animated: false)
+        
+        segmentChanged()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -50,13 +57,35 @@ class ThirdViewController: UIViewController {
     }
 }
 
-extension ThirdViewController: UITableViewDataSource {
+extension InboxViewController: NotificationManagerDelegate {
+    func notificationsFetched(_ notifications: [NotificationDTO]) {
+        self.notifications = notifications
+        DispatchQueue.main.async {
+            self.inboxTableView.reloadData()
+            self.inboxTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+        }
+    }
+    
+    
+}
+
+extension InboxViewController : ConversationManagerDelegate {
+    func conversationsFetched(_ conversations: [ConversationDTO]) {
+        self.conversations = conversations
+        DispatchQueue.main.async {
+            self.inboxTableView.reloadData()
+            self.inboxTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+        }
+    }
+}
+
+extension InboxViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if inboxSegment.selectedSegmentIndex == 0 {
             return notifications.count
         }
-        return messages.count
+        return conversations.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -64,30 +93,38 @@ extension ThirdViewController: UITableViewDataSource {
         if inboxSegment.selectedSegmentIndex == 0 {
             return prepareNotificationCell(tableView, indexPath)
         } else {
-            return prepareMessageCell(tableView, indexPath)
+            return prepareConversationCell(tableView, indexPath)
         }
     }
     
-    fileprivate func prepareMessageCell(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
+    fileprivate func prepareConversationCell(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as! MessageTableViewCell
-        cell.profileImage.image = #imageLiteral(resourceName: "first")
-        cell.time.text = "21:37"
-        cell.name.text = "Rafał Woźniak"
-        cell.content.text = "Witam, piszę z zapytaniem o najnwosze lamborghini gallardo"
+        let conversation = self.conversations[indexPath.row]
+        cell.profileImage.setImage(from: conversation.otherGuy.profile.profileImages[0].link)
+        if let dateTime = conversation.lastMessage?.dateTime {
+            let date = Date(from: dateTime, using: K.DateFormat.format)
+            cell.time.text = date.getTime()
+        } else {
+            cell.time.text = "00:00"
+        }
+        cell.name.text = "\(conversation.otherGuy.profile.firstName) \(conversation.otherGuy.profile.lastName)"
+        cell.content.text = conversation.lastMessage?.content ?? "Brak wiadomości"
         return cell
     }
     
     fileprivate func prepareNotificationCell(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationCell", for: indexPath) as! NotificationTableViewCell
+        let notification = self.notifications[indexPath.row]
         cell.mainImage.image = #imageLiteral(resourceName: "second")
-        cell.time.text = "21:37"
-        cell.subject.text = "Nowa rezerwacja"
-        cell.content.text = "Laura Roberts chce wypożyczyć Bugatti Divo"
+        cell.subject.text = "Powiadomienie"
+        cell.content.text = notification.content
+        let date = Date(from: notification.dateTime, using: K.DateFormat.format)
+        cell.time.text = date.getTime()
         return cell
     }
 }
 
-extension ThirdViewController: UITableViewDelegate {
+extension InboxViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if inboxSegment.selectedSegmentIndex == 1 {

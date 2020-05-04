@@ -57,10 +57,8 @@ class AccountManager {
         httpService.refreshToken(AccountManager.self.authenticationToken!.refreshToken.value)
     }
     
-    private static func isTokenFresh(_ token: String) ->  Bool {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
-        guard let validationDate = dateFormatter.date(from: token) else { return false }
+    private static func isTokenFresh(_ token: TokenDTO) ->  Bool {
+        let validationDate = Date(from: token.expiration, using: K.DateFormat.format)
         let now = Date()
         print(now > validationDate)
         return now > validationDate
@@ -70,14 +68,14 @@ class AccountManager {
         guard let token = AccountManager.self.authenticationToken else {
             return false
         }
-        return AccountManager.isTokenFresh(token.accessToken.expiration)
+        return AccountManager.isTokenFresh(token.accessToken)
     }
     
     private var isRefreshTokenFresh: Bool {
         guard let token = AccountManager.self.authenticationToken else {
             return false
         }
-        return AccountManager.isTokenFresh(token.refreshToken.expiration)
+        return AccountManager.isTokenFresh(token.refreshToken)
     }
 }
 

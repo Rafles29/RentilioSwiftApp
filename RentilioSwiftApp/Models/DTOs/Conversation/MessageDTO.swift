@@ -10,7 +10,7 @@ import Foundation
 
 struct MessageDTO: Codable {
     var messageId: String
-    var dateTime: Date
+    var dateTime: String
     var content: String
     var read: Bool
     var sender: String
