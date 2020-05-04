@@ -63,10 +63,10 @@ extension CarDetailsViewController: CarManagerDelegate {
             self.carType.text = car.type.toString()
             self.carName.text = "\(car.manufactor) \(car.model)"
                 
-            self.fuel.text = car.performance.fuel.toString()
-            self.seats.text = String(car.equipment.seats)
-            self.horsePower.text = String(car.performance.horsePower)
-            self.gearbox.text = car.performance.gearBox.toString()
+            self.fuel.text = car.performance!.fuel.toString()
+            self.seats.text = String(car.equipment!.seats)
+            self.horsePower.text = String(car.performance!.horsePower)
+            self.gearbox.text = car.performance!.gearBox.toString()
             
             //TODO: add car features
             }

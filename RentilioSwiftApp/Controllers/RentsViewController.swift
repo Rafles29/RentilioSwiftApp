@@ -16,6 +16,7 @@ class RentsViewController: UIViewController {
     var recentRents = [RentDTO]()
     var pastRents = [RentDTO]()
     let rentManager = RentManager()
+    var selectedRentId: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,13 @@ class RentsViewController: UIViewController {
         
         self.navigationController!.setNavigationBarHidden(false, animated: false)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToTripDetails" {
+            let vc = segue.destination as! RentDetailsViewController
+            vc.rentId = selectedRentId
+        }
+    }
 
     // must be internal or public.
     @objc func segmentChanged() {
@@ -57,7 +65,6 @@ class RentsViewController: UIViewController {
 
 extension RentsViewController: RentManagerDelegate {
     func rentsFetched(_ rents: [RentDTO]) {
-        print(rents)
         let (currentRents, pastRents) = rentManager.divideRents(rents)
         self.recentRents = currentRents
         self.pastRents = pastRents
@@ -69,6 +76,7 @@ extension RentsViewController: RentManagerDelegate {
 
 extension RentsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedRentId = rentSegment.selectedSegmentIndex == 0 ? recentRents[indexPath.row].rentId : pastRents[indexPath.row].rentId
         self.performSegue(withIdentifier: "ToTripDetails", sender: self)
     }
 }
@@ -82,12 +90,13 @@ extension RentsViewController: UITableViewDataSource {
     }
     
     fileprivate func prepareCell(_ cell: ReservationTableViewCell, rent: RentDTO) {
-        cell.carName.text = "Bugatti Divo"
+        
+        cell.carName.text = "\(rent.car!.manufactor) \(rent.car!.model)"
         let startDate = Date(from: rent.startDate, using: K.DateFormat.format).getDate()
         let endDate = Date(from: rent.endDate, using: K.DateFormat.format)
         cell.dates.text = "\(startDate) - \(endDate.getDate())"
         cell.pickupPlace.text = "zwrot: \(rent.adress), \(endDate.getTime())"
-        cell.thumbnail.image = #imageLiteral(resourceName: "second")
+        cell.thumbnail.setImage(from: rent.car!.carImages[0].link)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

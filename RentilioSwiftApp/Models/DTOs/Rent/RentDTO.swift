@@ -16,5 +16,5 @@ struct RentDTO: Codable {
     var price: Double
     var adress: String
     var userId: String
-    var carId: Int
+    var car: CarDTO?
 }

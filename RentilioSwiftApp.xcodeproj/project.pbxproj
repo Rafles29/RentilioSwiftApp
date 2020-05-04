@@ -35,7 +35,7 @@
 		DB6565982456154200CE5EEA /* MessengerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6565972456154200CE5EEA /* MessengerViewController.swift */; };
 		DB65659B2456192100CE5EEA /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6565992456192100CE5EEA /* MessageCell.swift */; };
 		DB65659C2456192100CE5EEA /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB65659A2456192100CE5EEA /* MessageCell.xib */; };
-		DB65659E2456369F00CE5EEA /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB65659D2456369F00CE5EEA /* TripViewController.swift */; };
+		DB65659E2456369F00CE5EEA /* RentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB65659D2456369F00CE5EEA /* RentDetailsViewController.swift */; };
 		DB6D74042455A83F005E28D8 /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6D74022455A83F005E28D8 /* CarCollectionViewCell.swift */; };
 		DB6D74052455A83F005E28D8 /* CarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6D74032455A83F005E28D8 /* CarCollectionViewCell.xib */; };
 		DB6E714724531BB20041BD1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E714624531BB20041BD1F /* AppDelegate.swift */; };
@@ -47,7 +47,7 @@
 		DB6E715524531BB40041BD1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6E715324531BB40041BD1F /* LaunchScreen.storyboard */; };
 		DB6E716024531F430041BD1F /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E715F24531F430041BD1F /* InboxViewController.swift */; };
 		DB6E716224531F510041BD1F /* RentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E716124531F510041BD1F /* RentsViewController.swift */; };
-		DB6E716424531F610041BD1F /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E716324531F610041BD1F /* FifthViewController.swift */; };
+		DB6E716424531F610041BD1F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E716324531F610041BD1F /* MenuViewController.swift */; };
 		DB8A58A32460118B00A5A012 /* ConversationHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8A58A22460118B00A5A012 /* ConversationHttpService.swift */; };
 		DB8A58A5246013E200A5A012 /* ConversationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8A58A4246013E200A5A012 /* ConversationManager.swift */; };
 		DB8A58A72460197800A5A012 /* NotificationHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8A58A62460197800A5A012 /* NotificationHttpService.swift */; };
@@ -100,7 +100,7 @@
 		DB6565972456154200CE5EEA /* MessengerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerViewController.swift; sourceTree = "<group>"; };
 		DB6565992456192100CE5EEA /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		DB65659A2456192100CE5EEA /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
-		DB65659D2456369F00CE5EEA /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
+		DB65659D2456369F00CE5EEA /* RentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentDetailsViewController.swift; sourceTree = "<group>"; };
 		DB6D74022455A83F005E28D8 /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
 		DB6D74032455A83F005E28D8 /* CarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCollectionViewCell.xib; sourceTree = "<group>"; };
 		DB6E714324531BB20041BD1F /* RentilioSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentilioSwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +114,7 @@
 		DB6E715624531BB40041BD1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB6E715F24531F430041BD1F /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 		DB6E716124531F510041BD1F /* RentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentsViewController.swift; sourceTree = "<group>"; };
-		DB6E716324531F610041BD1F /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		DB6E716324531F610041BD1F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DB8A58A22460118B00A5A012 /* ConversationHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationHttpService.swift; sourceTree = "<group>"; };
 		DB8A58A4246013E200A5A012 /* ConversationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationManager.swift; sourceTree = "<group>"; };
 		DB8A58A62460197800A5A012 /* NotificationHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHttpService.swift; sourceTree = "<group>"; };
@@ -315,9 +315,9 @@
 				DB6E714C24531BB20041BD1F /* SearchCarsViewController.swift */,
 				DB6E715F24531F430041BD1F /* InboxViewController.swift */,
 				DB6E716124531F510041BD1F /* RentsViewController.swift */,
-				DB6E716324531F610041BD1F /* FifthViewController.swift */,
+				DB6E716324531F610041BD1F /* MenuViewController.swift */,
 				DB6565972456154200CE5EEA /* MessengerViewController.swift */,
-				DB65659D2456369F00CE5EEA /* TripViewController.swift */,
+				DB65659D2456369F00CE5EEA /* RentDetailsViewController.swift */,
 				DBE5F5222456F0E000611DC3 /* CarDetailsViewController.swift */,
 				DBE5F5242456F1B500611DC3 /* ProfileViewController.swift */,
 				DBF672582457312A0007859D /* LoginViewController.swift */,
@@ -490,13 +490,13 @@
 				DB8A58AF24602C6F00A5A012 /* RentHttpService.swift in Sources */,
 				DB11C24324548F8E00BF3391 /* MessageTableViewCell.swift in Sources */,
 				DB1B854A245B2AB3002F3120 /* AuthenticationHttpService.swift in Sources */,
-				DB65659E2456369F00CE5EEA /* TripViewController.swift in Sources */,
+				DB65659E2456369F00CE5EEA /* RentDetailsViewController.swift in Sources */,
 				DB6E714924531BB20041BD1F /* SceneDelegate.swift in Sources */,
 				DBE5F5232456F0E000611DC3 /* CarDetailsViewController.swift in Sources */,
 				DB1B8522245AD4AB002F3120 /* LoginDTO.swift in Sources */,
 				DBF672592457312A0007859D /* LoginViewController.swift in Sources */,
 				DBAF092A2455964000E34871 /* ReservationTableViewCell.swift in Sources */,
-				DB6E716424531F610041BD1F /* FifthViewController.swift in Sources */,
+				DB6E716424531F610041BD1F /* MenuViewController.swift in Sources */,
 				DB1B8543245B0E5F002F3120 /* ProfileImageDTO.swift in Sources */,
 				DB1B8531245B01B0002F3120 /* CarImageDTO.swift in Sources */,
 				DB6D74042455A83F005E28D8 /* CarCollectionViewCell.swift in Sources */,

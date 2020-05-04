@@ -27,6 +27,6 @@ extension Date {
     func getDate() -> String {
         let calendar = Calendar.current
         let time = calendar.dateComponents([.year,.month, .day], from: self)
-        return "\(time.year!).\(time.month!).\(time.year!)"
+        return "\(time.year!).\(time.month!).\(time.day!)"
     }
 }

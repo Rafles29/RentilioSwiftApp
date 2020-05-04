@@ -10,6 +10,16 @@ import Foundation
 
 protocol RentManagerDelegate {
     func rentsFetched(_ rents: [RentDTO])
+    func rentFetched(_ rent: RentDTO)
+}
+
+extension RentManagerDelegate {
+    func rentsFetched(_ rents: [RentDTO]) {
+        print(rents)
+    }
+    func rentFetched(_ rent: RentDTO) {
+        print(rent)
+    }
 }
 
 class RentManager {
@@ -25,6 +35,11 @@ class RentManager {
     func getRents() {
         guard let token = AccountManager.token else { return }
         httpService.getRents(authorizationToken: token)
+    }
+    
+    func getRent(withId rentId: Int) {
+        guard let token = AccountManager.token else { return }
+        httpService.getRent(authorizationToken: token, rentId: rentId)
     }
     
     func divideRents(_ rents: [RentDTO]) -> ([RentDTO], [RentDTO]) {
@@ -47,5 +62,9 @@ extension RentManager: RentHttpDelegate {
     
     func rentsFetched(_ rents: [RentDTO]) {
         self.delegate?.rentsFetched(rents)
+    }
+    
+    func rentFetched(_ rent: RentDTO) {
+        self.delegate?.rentFetched(rent)
     }
 }

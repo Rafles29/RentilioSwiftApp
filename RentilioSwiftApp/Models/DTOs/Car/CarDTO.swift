@@ -17,9 +17,9 @@ struct CarDTO: Codable {
     var description: String
     
     var type: CarType
-    var price: PriceDTO
-    var performance: PerformanceDTO
-    var equipment: EquipmentDTO
+    var price: PriceDTO?
+    var performance: PerformanceDTO?
+    var equipment: EquipmentDTO?
     var carImages: [CarImageDTO]
     var rents: [RentDTO]
     let reviews: [ReviewDTO]

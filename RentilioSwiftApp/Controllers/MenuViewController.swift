@@ -1,5 +1,5 @@
 //
-//  FifthViewController.swift
+//  MenuViewController.swift
 //  RentilioSwiftApp
 //
 //  Created by Rafal Wozniak on 24/04/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FifthViewController: UIViewController {
+class MenuViewController: UIViewController {
     
     let sections = ["Konto", "Flota"]
     let menu = [
@@ -33,13 +33,13 @@ class FifthViewController: UIViewController {
     }
 }
 
-extension FifthViewController: UITableViewDelegate {
+extension MenuViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: menu[indexPath.section][indexPath.row].identifier, sender: self)
     }
 }
 
-extension FifthViewController: UITableViewDataSource {
+extension MenuViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         self.sections[section]
